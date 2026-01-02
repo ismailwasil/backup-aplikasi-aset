@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^mercedes-benz.jpg?$ index.html
+RewriteRule ^audi.jpg?$ inventaris.html
+RewriteRule ^mazda.jpg?$ stock.html
+RewriteRule ^bmw.jpg?$ pengajuanspm.html
+RewriteRule ^lexus.jpg?$ info.html
+RewriteRule ^toyota.jpg?$ konsolidator.html
+RewriteRule ^honda.jpg?$ contact.html

@@ -1,0 +1,119 @@
+.modalDate {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1050;
+    display: none;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0
+}
+
+.modalDate-content {
+    /* box-shadow: -8px 12px 18px 0 #ffffff21; */
+    border: none;
+    /* backdrop-filter: blur(5px); */
+    background: #ffffff59;
+    box-shadow: 0 8px 32px 0 #ffffff21;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border-right: 3px solid #ffffff49;
+    border-bottom: 3px solid #ffffff49;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tbl {
+    caption-side: top;
+    margin: 15px;
+    border-radius: 15px;
+    background: #f2f7ff;
+    box-shadow: inset 5px 5px 6px #e8edf5,
+        inset -5px -5px 6px #fcffff;
+
+    table-layout: fixed;
+    width: 100%;
+}
+
+.th {
+    /* border-radius: 15px; */
+    background: #acc6f0;
+    box-shadow: 5px 5px 6px #e8edf5,
+        -5px -5px 6px #fcffff;
+}
+
+.trCal,
+.tdCal {
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tdCal {
+    background: #f2f7ff;
+    box-shadow: inset 5px 5px 2px #e8edf5,
+        inset -5px -5px 2px #fcffff;
+
+}
+
+.tdCal span {
+    color: #2c2c2c;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tdCal:nth-child(1) span {
+    color: #f30b59;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tdCal span:hover {
+    color: #0dad62;
+}
+
+.thCal {
+    text-align: center;
+    padding: 10px;
+    text-shadow: 4px 4px 2px #05146736;
+    color: #435ebe;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.thCal:nth-child(1) {
+    text-align: center;
+    padding: 10px;
+    text-shadow: 4px 4px 2px #05146736;
+    color: #ee4594;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+caption {
+    color: #25396f;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: default;
+}
+
+caption span:hover {
+    color: #c04107;
+    background: #ebf3ff;
+    box-shadow: inset 5px 5px 3px #dbe2ed,
+        inset -5px -5px 3px #fbffff;
+}

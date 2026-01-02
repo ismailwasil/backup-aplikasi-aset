@@ -1,0 +1,36 @@
+.custom-loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #380CF4;
+    position: relative;
+    transform-origin: left;
+    animation: h2 0.5s infinite linear;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 1px solid #380CF4;
+    transform-origin: 50% calc(100% - 2px);
+    animation: inherit;
+}
+
+.custom-loader::after {
+    inset: auto 0 calc(100% + 1px);
+    animation-duration: 0.25s;
+    animation-direction: reverse;
+    transform-origin: 50% calc(200% - 1px);
+}
+
+@keyframes h2 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
