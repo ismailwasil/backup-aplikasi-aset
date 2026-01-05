@@ -231,12 +231,17 @@
                                                         <?php
                                                         $i = 1;
                                                         // $IdUser = $user['id_status'];
-                                                        $spmProsesQuery = "SELECT *, spm_masuk.id AS id_masukP FROM status_spm JOIN spm_masuk 
-                                                            ON status_spm.id = spm_masuk.id_status JOIN data_user ON spm_masuk.skpd=data_user.id
-                                                            WHERE spm_masuk.id_status=1 AND spm_masuk.tgl_aju LIKE '$tahunIdent%'
-                                                            ORDER BY spm_masuk.tgl_aju DESC
-                                                            ";
-                                                        $spm_masuk_proses = $this->db->query($spmProsesQuery)->result_array();
+                                                        $spm_masuk_proses = $this->db
+                                                            ->select('*, spm_masuk.id AS id_masukP')
+                                                            ->from('status_spm')
+                                                            ->join('spm_masuk', 'status_spm.id = spm_masuk.id_status')
+                                                            ->join('data_user', 'spm_masuk.skpd = data_user.id')
+                                                            ->where('spm_masuk.id_status', 1)
+                                                            ->like('spm_masuk.tgl_aju', $tahunIdent, 'after')
+                                                            ->order_by('spm_masuk.tgl_aju', 'DESC')
+                                                            ->get()
+                                                            ->result_array();
+
                                                         ?>
                                                         <?php foreach ($spm_masuk_proses as $mspmP) : ?>
                                                             <tr>
@@ -337,12 +342,17 @@
                                                         <?php
                                                         $i = 1;
                                                         // $IdUser = $user['id_status'];
-                                                        $spmTolakQuery = "SELECT *, spm_masuk.id AS id_masukT FROM status_spm JOIN spm_masuk 
-                                                            ON status_spm.id = spm_masuk.id_status JOIN data_user ON spm_masuk.skpd=data_user.id
-                                                            WHERE spm_masuk.id_status=2 AND spm_masuk.tgl_aju LIKE '$tahunIdent%'
-                                                            ORDER BY spm_masuk.tgl_aju DESC
-                                                            ";
-                                                        $spm_masuk_tolak = $this->db->query($spmTolakQuery)->result_array();
+                                                        $spm_masuk_tolak = $this->db
+                                                            ->select('*, spm_masuk.id AS id_masukT')
+                                                            ->from('status_spm')
+                                                            ->join('spm_masuk', 'status_spm.id = spm_masuk.id_status')
+                                                            ->join('data_user', 'spm_masuk.skpd = data_user.id')
+                                                            ->where('spm_masuk.id_status', 2)
+                                                            ->like('spm_masuk.tgl_aju', $tahunIdent, 'after')
+                                                            ->order_by('spm_masuk.tgl_aju', 'DESC')
+                                                            ->get()
+                                                            ->result_array();
+
                                                         ?>
                                                         <?php foreach ($spm_masuk_tolak as $mspmT) : ?>
                                                             <tr>
