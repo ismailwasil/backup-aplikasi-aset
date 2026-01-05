@@ -1,7 +1,6 @@
 <?= $this->session->flashdata('message'); ?>
 <?php
-$QueryListAset = "SELECT * FROM aset_sewa";
-$ListAset = $this->db->query($QueryListAset)->result_array();
+$ListAset = $this->db->get('aset_sewa')->result_array();
 $nama_aset = $this->db->get_where('aset_sewa', ['id_aset' => $id_aset])->row_array();
 ?>
 <div class="page-title">
