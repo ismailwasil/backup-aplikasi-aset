@@ -14,7 +14,7 @@
                     <div class="col-6 col-lg-3 col-md-6">
                         <?php
                         $id_jumlah_aset = $LA['id_aset'];
-                        $this->db
+                        $jumlahAngkaSewa = $this->db
                             ->where('id_aset', $id_jumlah_aset)
                             ->from('event_acara')
                             ->count_all_results();
