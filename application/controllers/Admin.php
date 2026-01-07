@@ -56,14 +56,13 @@ class Admin extends CI_Controller
         $data['has_sub'] = "Admin Sewa";
 
         $data['sewa_masuk'] = $this->db
-            ->select('*')
+            ->select('status_sewa.*, event_acara.*, aset_sewa.*')
             ->from('status_sewa')
             ->join('event_acara', 'status_sewa.id_status = event_acara.id_status')
             ->join('aset_sewa', 'event_acara.id_aset = aset_sewa.id_aset')
-            ->where('status_sewa.id', $id)
+            ->where('event_acara.id', (int)$id)
             ->get()
             ->row_array();
-
 
         $this->load->view('templates/page_header', $data);
         $this->load->view('templates/menu/sidebar-menu');
