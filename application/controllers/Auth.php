@@ -375,15 +375,26 @@ class Auth extends CI_Controller
     public function changeEventCountdown()
     {
         $id_role = $this->session->userdata('id_role');
+		$this->load->model('Data_countdown_model');
 
 
-        $date_countdown = htmlspecialchars($this->input->post('dateCountdown'));
-        $message_1 = htmlspecialchars($this->input->post('message_1'));
-        $message_final = htmlspecialchars($this->input->post('message_final'));
+        // $date_countdown = htmlspecialchars($this->input->post('dateCountdown'));
+        // $message_1 = htmlspecialchars($this->input->post('message_1'));
+        // $message_final = htmlspecialchars($this->input->post('message_final'));
 
-        $query_darurat = "UPDATE `countdown_event` SET `date_countdown` = '$date_countdown', `message_1` = '$message_1', `message_final` = '$message_final'  WHERE `countdown_event`.`id_countdown` = 1;
-                        ";
-        $this->db->query($query_darurat);
+        // $query_darurat = "UPDATE `countdown_event` SET `date_countdown` = '$date_countdown', `message_1` = '$message_1', `message_final` = '$message_final'  WHERE `countdown_event`.`id_countdown` = 1;
+        //                 ";
+        // $this->db->query($query_darurat);
+
+        // Ambil & sanitasi input
+        $data = [
+            'date_countdown' => htmlspecialchars($this->input->post('dateCountdown', true)),
+            'message_1'      => htmlspecialchars($this->input->post('message_1', true)),
+            'message_final'  => htmlspecialchars($this->input->post('message_final', true))
+        ];
+
+        // Update data
+        $this->Data_countdown_model->update_event($data, 1);
         //$data['aset_sewa'] = $this->db->get_where('aset_sewa', ['nm_aset' => 'Bus Pemda'])->row_array();
         //var_dump($data['aset_sewa']);
         //die();
