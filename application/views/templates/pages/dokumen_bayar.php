@@ -310,7 +310,7 @@
             <div>Lembar ini adalah bukti pembayaran yang sah</div>
             <div style="text-align:right; font-size: 1.2em;">
                 Sampang, <?= ubahFormatTanggal($bayar['tanggal_bb'], 'd-m-Y') ?><br>
-                <div class="status">LUNAS</div>
+                <div class="status"><?= $bayar['status_bb'] ?></div>
             </div>
         </div>
     </div>
