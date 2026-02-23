@@ -768,8 +768,8 @@ class Admin extends CI_Controller
         $data['spm_masuk'] = $this->db
             ->select('spm_masuk.id AS id_masuk_spm,
                 spm_masuk.*,
-                status_spm.nama_status,
-                data_user.nama_user')
+                status_spm.status,
+                data_user.name')
             ->from('status_spm')
             ->join('spm_masuk', 'status_spm.id = spm_masuk.id_status')
             ->join('data_user', 'spm_masuk.skpd = data_user.id')
