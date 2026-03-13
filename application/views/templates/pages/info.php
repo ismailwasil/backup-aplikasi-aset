@@ -321,7 +321,8 @@
                                             </a>
                                         </div>
                                         <div class="card" style="margin-left: 7px; margin-right: 7px;">
-                                            <a href="https://drive.google.com/drive/folders/1th6Z035DF-5OtLrH91CC8jP0T2QKUDht?usp=sharing" target="_blank">
+                                            <a href="<?= base_url('auth/kode_barang_108') ?>">
+                                                <!-- <a href="https://drive.google.com/drive/folders/1th6Z035DF-5OtLrH91CC8jP0T2QKUDht?usp=sharing" target="_blank"> -->
                                                 <div class="card-content">
                                                     <img class="card-img-top img-fluid" src="<?= base_url('assets/'); ?>images/info/toolbox.png" alt="Sleeping working">
                                                     <div class="card-body">
