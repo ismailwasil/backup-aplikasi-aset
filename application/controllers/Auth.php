@@ -1651,4 +1651,24 @@ class Auth extends CI_Controller
             redirect('user/index');
         }
     }
+
+	public function kode_barang_108()
+    {
+        $this->load->model('Kode_barang_model');
+        if (!$this->session->userdata('username')) {
+            redirect('auth');
+        } else {
+            $data['user'] = $this->db->get_where('data_user', ['username' => $this->session->userdata('username')])->row_array();
+            $data['title'] = "Kode Barang 108";
+            $data['kode_108'] = $this->Kode_barang_model->getDataKodBar();
+
+            // $data['kode_108'] = json_encode($kodeBarang108);
+
+            $this->load->view('templates/page_header', $data);
+            // $this->load->view('templates/menu/sidebar-menu');
+            $this->load->view('templates/navbar', $data);
+            $this->load->view('templates/pages/cek_kode_barang_108', $data);
+            $this->load->view('templates/page_footer');
+        }
+    }
 }
