@@ -805,6 +805,12 @@ class Auth extends CI_Controller
     // Ajukan SPM
     public function ajukanSPM()
     {
+		$this->load->library('JamKerjaLogic_libra');
+        $indicator = $this->jamkerjalogic_libra->isJamKerja() ? 'buka' : 'kunci'; //ini indikator untuk validasi tidak bisa mengajukan di luar jam kerja
+        if ($indicator == 'kunci') {
+            die('Maaf, waktu sudah di luar jam kerja');
+        }
+		
         $id_role = $this->session->userdata('id_role');
         $this->load->library('telegram'); //load library telegram
 
