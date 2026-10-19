@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsolidator - Aset BPPKAD</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/drophover.css">
+
+    <link rel="shortcut icon" href="assets/images/favicon/Trunojoyo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Slide Bar -->
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/favicon/Trunojoyo.ico" alt="Logo" height="200">aset</a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title text-muted">Menu</li>
+
+                        <li class="sidebar-item ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-tools"></i>
+                                <span>Layanan</span>
+                            </a>
+                            <ul class="submenu active">
+                                <li class="submenu-item">
+                                    <a href="inventaris.html">
+                                        <i class="bi bi-file-earmark-medical-fill"></i>
+                                        <span>Buku Inventaris</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="stock.html">
+                                        <i class="bi bi-inboxes-fill"></i>
+                                        <sapn>Persediaan</sapn>
+                                    </a>
+                                </li>
+                                <li class="submenu-item active">
+                                    <a href="spm.html">
+                                        <i class="bi bi-cash-stack"></i>
+                                        <sapn>SPM</sapn>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="info.html" class='sidebar-link'>
+                                <i class="bi bi-megaphone-fill"></i>
+                                <span>Info</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="konsolidator.html" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Konsolidator</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-title text-muted">Kontak Kami</li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-phone-vibrate-fill"></i>
+                                <span>Contact</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="https://api.whatsapp.com/send/?phone=6281913333320&text=Salam+Ismail.&app_absent=0" target="_blank">
+                                        <i class="bi bi-whatsapp"></i>
+                                        <span>Admin Website</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="contact.html">
+                                        <i class="bi bi-building"></i>
+                                        <sapn>Kantor</sapn>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <!-- /Slide Bar -->
+
+    </div>
+    <div id="main">
+        <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+                <i class="bi bi-justify fs-3"></i>
+            </a>
+        </header>
+
+        <div class="page-heading">
+            <div class="page-title">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-md-1 order-last">
+                        <h3>Form Input SPM</h3>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-2 order-first">
+                        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-caret-right-fill"></i>Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">SPM</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hoverable rows start -->
+            <section class="section">
+                <div class="row" id="table-hover-row">
+                    <div class="row match-height">
+                        <!-- Masukkan Data SPM -->
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <h5 class="card-header text-center">Form Data SPM</h5>
+                                <p class="text-center"> Masukkan data SPM dengan klik
+                                    <button type="button" class="btn btn-outline-primary me-1 mb-1" data-bs-toggle="modal" data-bs-target="#inlineForm">
+                                        Input SPM
+                                    </button>
+                                </p>
+
+
+                                <!--login form Modal -->
+                                <div class="modal fade text-left" id="inlineForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel33">Input Data SPM </h4>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <i data-feather="x"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-danger me-1 mb-1" data-bs-dismiss="modal">
+                                                    <i class="bx bx-x d-block d-sm-none"></i>
+                                                    <span class="d-none d-sm-block">X</span>
+                                                </button>
+                                            </div>
+                                            <form action="#" class="form form-vertical" name="new-spm">
+                                                <div class="modal-body">
+                                                    <div class="form-body">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="nomerRegister"><h6><i class="bi bi-pencil-square"></i> Nomer Register</h6></label>
+                                                                    <div class="position-relative">
+                                                                        <input type="text" class="form-control" placeholder="No Register" id="nomerRegister" name="noreg" disabled>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="tanggal"><h6><i class="bi bi-calendar-check"></i> Tanggal</h6></label>
+                                                                        <div class="position-relative">
+                                                                            <input type="text" class="form-control" id="tanggal" name="tanggal" disabled>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <script>
+                                                                        var d = new Date();
+                                                                        document.getElementById("tanggal").value = d.toLocaleDateString();
+                                                                    </script>
+                                                                    
+                                                                </div> -->
+                                                            <div class="col-12">
+                                                                <div class="form-group has-icon-left">
+                                                                    <label for="skpd"><h6><i class="bi bi-building"></i> SKPD</h6></label>
+                                                                    <div class="position-relative">
+                                                                        <select class="form-select" id="skpd" name="skpd">
+                                                                            <option selected disabled>-- Nama SKPD --</option>
+                                                                            <option>1. SEKRETARIAT DAERAH</option> 
+                                                                            <option>2. SEKRETARIAT DPRD</option> 
+                                                                            <option>3. INSPEKTORAT DAERAH</option> 
+                                                                            <option>4. DINAS PENDIDIKAN</option> 
+                                                                            <option>5. DINAS PEMUDA, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA</option> 
+                                                                            <option>6. DINAS KESEHATAN DAN KB</option> 
+                                                                            <option>7. DINAS SOSIAL DAN NAKER</option> 
+                                                                            <option>8. DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL</option> 
+                                                                            <option>9. DINAS PEMBERDAYAAN MASYARAKAT DAN DESA</option> 
+                                                                            <option>10. DINAS PU DAN PENATAAN RUANG</option> 
+                                                                            <option>11. DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN</option> 
+                                                                            <option>12. DINAS PERHUBUNGAN</option> 
+                                                                            <option>13. SATUAN POLISI PAMONG PRAJA</option> 
+                                                                            <option>14. DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU</option> 
+                                                                            <option>15. DINAS KOPERASI, PERINDUSTRIAN DAN PERDAGANGAN</option> 
+                                                                            <option>16. DINAS KOMUNIKASI DAN INFORMATIKA</option> 
+                                                                            <option>17. DINAS PERTANIAN DAN KETAHANAN PANGAN</option> 
+                                                                            <option>18. DINAS PERIKANAN</option> 
+                                                                            <option>19. DINAS LINGKUNGAN HIDUP</option> 
+                                                                            <option>20. DINAS KEARSIPAN DAN PERPUSTAKAAN</option> 
+                                                                            <option>21. BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PEMBANGUNAN DAERAH</option> 
+                                                                            <option>22. BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH</option> 
+                                                                            <option>23. BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA</option> 
+                                                                            <option>24. BADAN KESATUAN BANGSA DAN POLITIK</option> 
+                                                                            <option>25. BADAN PENANGGULANGAN BENCANA DAERAH</option> 
+                                                                            <option>26. KECAMATAN SAMPANG</option> 
+                                                                            <option>27. KECAMATAN OMBEN</option> 
+                                                                            <option>28. KECAMATAN CAMPLONG</option> 
+                                                                            <option>29. KECAMATAN TORJUN</option> 
+                                                                            <option>30. KECAMATAN PANGARENGAN</option> 
+                                                                            <option>31. KECAMATAN JRENGIK</option> 
+                                                                            <option>32. KECAMATAN SRESEH</option> 
+                                                                            <option>33. KECAMATAN TAMBELANGAN</option> 
+                                                                            <option>34. KECAMATAN KEDUNGDUNG</option> 
+                                                                            <option>35. KECAMATAN ROBATAL</option> 
+                                                                            <option>36. KECAMATAN KARANG PENANG</option> 
+                                                                            <option>37. KECAMATAN KETAPANG</option> 
+                                                                            <option>38. KECAMATAN BANYUATES</option> 
+                                                                            <option>39. KECAMATAN SOKOBANAH</option> 
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="noSPM"><h6><i class="bi bi-bar-chart-line"></i> Nomer SPM</h6></label>
+                                                                    <div class="position-relative">
+                                                                        <input type="text" class="form-control" placeholder="-- Nomer SPM --" id="noSPM" name="noSPM" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="bukti"><h6><i class="bi bi-bookmark-check"></i> Uraian Bukti</h6></label>
+                                                                    <div class="form-horizontal">
+                                                                        <div class="row">
+                                                                            <div class="col-md-9">
+                                                                                <div class="position-relative">
+                                                                                    <select class="form-select" id="bukti" name="bukti">
+                                                                                            <option selected disabled>-- Bukti --</option>
+                                                                                            <option>BELANJA MODAL SEMESTER I/II</option>
+                                                                                            <option>BUKU INVENTARIS SEMESTER I/II</option>
+                                                                                            <option>KIB SEMESTER I/II</option>
+                                                                                            <option>BUKU PERSEDIAAN</option>
+                                                                                            <option>KARTU STOCK</option>
+                                                                                        </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="position-relative">
+                                                                                    <select class="form-select" id="jenis" name="jenis">
+                                                                                            <option selected disabled>-Jenis-</option>
+                                                                                            <option>SOFTCOPY</option>
+                                                                                            <option>HARDCOPY</option>
+                                                                                        </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="validator"><h6><i class="bi bi-people"></i> Validator</h6></label>
+                                                                    <div class="position-relative">
+                                                                        <select class="form-select" id="validator" name="validator">
+                                                                            <option selected disabled>-- Nama Validator --</option>
+                                                                            <option>AHMAD MUNASIK, S.Sos.</option>
+                                                                            <option>FAJAR ROMADHON, S.T., M.Si.</option>
+                                                                            <option>JONI PURNA IRAWAN, S.E.,M.M.</option>
+                                                                            <option>LINDA YUNITASARI, S.E.</option>
+                                                                            <option>NUR IMAMATUL CHOIR, S.A.</option>
+                                                                            <option>ISMAIL</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <!-- Alert data berhasil -->
+                                                    <div class="alert alert-success alert-dismissible fade show my-alert d-none" id="btnAlert" role="alert">
+                                                        <strong>Terima Kasih!</strong> Data berhasil diinput.
+                                                        <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close"></button>
+                                                    </div>
+                                                    <!-- /Alert data berhasil -->
+                                                    <div class="col-12 d-flex justify-content-end">
+                                                        <button type="submit" class="btn btn-primary btn-submit me-1 mb-1">Submit</button>
+                                                        <button class="btn btn-light-primary btn-loading me-1 mb-1 d-none" type="button" disabled>
+                                                            <img src="assets/vendors/svg-loaders/audio.svg" class="me-4" style="width: 1.1rem" alt="audio">
+                                                            <span>Loading...</span>
+                                                            </button>
+                                                        <button type="button" class="btn btn-light-danger btn-reload me-1 mb-1 d-none" onClick="document.location.reload(true)">Masukkan Data Baru</button>
+                                                        <script>
+                                                            function reloadpage() {
+                                                                location.reload()
+                                                            }
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /login form Modal -->
+                            </div>
+
+                        </div>
+                        <!-- /Masukkan Data SPM -->
+
+                        <div class="col-md-6 col-12" id="printspm">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title text-center">Database SPM</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+
+                                        <!-- table hover -->
+                                        <div class="table-responsive">
+                                            <table class="table table-hover mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tanggal</th>
+                                                        <th>No. Register</th>
+                                                        <th>SKPD</th>
+                                                        <th>Nomer SPM</th>
+                                                        <th>Uraian Bukti</th>
+                                                        <th>Jenis</th>
+                                                        <th>Validator</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>today()</td>
+                                                        <td class="text-bold-500">0568</td>
+                                                        <td class="text-bold-500">22. BPPKAD</td>
+                                                        <td>00xxx/SPM-GU/234.432.02/06/2022</td>
+                                                        <td>Persediaan</td>
+                                                        <td>Softcopy</td>
+                                                        <td>Ismail</td>
+                                                        <td><button type="button" class="btn btn-success me-1" onclick="myPrint('printspm')">Print</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- js print -->
+                            <script>
+                                function myPrint(printspm) {
+                                    var printdata = document.getElementById(printspm);
+                                    newwin = window.open("");
+                                    newwin.document.write(printdata.outerHTML);
+                                    newwin.print();
+                                    newwin.close();
+                                }
+                            </script>
+                            <!-- /js print -->
+                        </div>
+
+                        <!-- List DB SPM -->
+
+                        <!-- /:ist DB SPM -->
+                    </div>
+            </section>
+            <!-- Hoverable rows end -->
+            <section class="section">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card">
+
+                            <div class="dropdownhover">
+                                <button class="dropbtn">Dropdown</button>
+                                <div class="dropdownhover-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            </div>
+
+            <footer>
+
+                <!-- Note footer -->
+                <section class="section">
+                    <div class="row" id="table-responsive">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Ada masalah dengan <i>website</i>? Hubungi <a href="https://api.whatsapp.com/send/?phone=6281913333320&text=Salam+Ismail.&app_absent=0" target="_blank">Admin Website</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Note footer -->
+
+
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> &copy; Aset BPPKAD</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Made with &hearts; by <a href="https://asetbppkad.github.io/aset-baru.github.io/">Aset BPPKAD</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxb-Jd3fQvXnX5vffBIabR4wSxdTQM60DDCMEa1Upq03neOe26qxiPLdvV1FsgtkPqusg/exec'
+        const form = document.forms['new-spm']
+        const btnSubmit = document.querySelector('.btn-submit')
+        const btnLoading = document.querySelector('.btn-loading')
+        const myAlert = document.querySelector('.my-alert')
+        const myReload = document.querySelector('.btn-reload')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+                // ketika tombol submit klik
+                // tampilkan tombol loading hilangkan tombol submit
+            btnLoading.classList.toggle('d-none')
+            btnSubmit.classList.toggle('d-none')
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    // ketika succes tampilkan tombol submit hilangkan tombol loading
+                    btnLoading.classList.toggle('d-none')
+                    myReload.classList.toggle('d-none')
+                    myAlert.classList.toggle('d-none')
+
+                    // reset data
+                    form.reset()
+
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

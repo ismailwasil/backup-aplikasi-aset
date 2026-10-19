@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPM - Aset BPPKAD</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon/Trunojoyo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Slide Bar -->
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="mercedes-benz.jpg" class="animate-charcter"><img src="assets/images/favicon/Trunojoyo.ico" alt="Logo" height="200">aset</a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title text-muted">Menu</li>
+
+                        <li class="sidebar-item ">
+                            <a href="mercedes-benz.jpg" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item active has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-tools"></i>
+                                <span>Layanan</span>
+                            </a>
+                            <ul class="submenu active">
+                                <li class="submenu-item">
+                                    <a href="audi.jpg">
+                                        <i class="bi bi-file-earmark-medical-fill"></i>
+                                        <span>Buku Inventaris</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="mazda.jpg">
+                                        <i class="bi bi-inboxes-fill"></i>
+                                        <sapn>Persediaan</sapn>
+                                    </a>
+                                </li>
+                                <li class="submenu-item active">
+                                    <a href="bmw.jpg">
+                                        <i class="bi bi-cash-stack"></i>
+                                        <sapn>SPM</sapn>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="lexus.jpg" class='sidebar-link'>
+                                <i class="bi bi-megaphone-fill"></i>
+                                <span>Info</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="toyota.jpg" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Konsolidator</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-title text-muted">Kontak Kami</li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-phone-vibrate-fill"></i>
+                                <span>Contact</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="https://api.whatsapp.com/send/?phone=6281913333320&text=Salam+Ismail.&app_absent=0" target="_blank">
+                                        <i class="bi bi-whatsapp"></i>
+                                        <span>Admin Website</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="honda.jpg">
+                                        <i class="bi bi-building"></i>
+                                        <sapn>Kantor</sapn>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <!-- /Slide Bar -->
+
+    </div>
+    <div id="main">
+        <header class="mb-3">
+            <a href="#" class="burger-btn d-block d-xl-none">
+                <i class="bi bi-justify fs-3"></i>
+            </a>
+
+            <nav class="navbar navbar-expand navbar-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown me-1">
+                                <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                    <li>
+                                        <h6 class="dropdown-header">Mail</h6>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">No new mail</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown me-3">
+                                <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                    <li>
+                                        <h6 class="dropdown-header">Notifications</h6>
+                                    </li>
+                                    <li><a class="dropdown-item">No notification available</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="user-menu d-flex">
+                                    <div class="user-name text-end me-3">
+                                        <h6 class="mb-0 text-gray-600">Ismail Aset</h6>
+                                        <p class="mb-0 text-sm text-gray-600">Administrator</p>
+                                    </div>
+                                    <div class="user-img d-flex align-items-center">
+                                        <div class="avatar avatar-md">
+                                            <img src="assets/images/faces/Presiden_Ismail.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <h6 class="dropdown-header">Hello, Ismail!</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-person me-2"></i> My
+                                            Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i>
+                                            Settings</a></li>
+                                <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="auth-login.html"><i
+                                                class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="page-heading">
+            <div class="page-title">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-md-1 order-last">
+                        <h3>Form Input SPM</h3>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-2 order-first">
+                        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="mercedes-benz.jpg"><i class="bi bi-caret-right-fill"></i>Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"> <a href="spm2.html">SPM versi 2</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hoverable rows start -->
+            <section class="section">
+                <!-- FORM INPUT SPM -->
+                <div class="row" id="table-hover-row">
+                    <div class="row match-height justify-content-center">
+                        <!-- Nav -->
+                        <!-- <div class="col-md-6 col-12"> -->
+                        <div class="card">
+                            <!-- <div class="card-header">
+                                    <h5 class="card-title">Horizontal Navs</h5>
+                                </div> -->
+                            <div class="card-body">
+                                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="input-tab" data-bs-toggle="tab" href="#input" role="tab" aria-controls="input" aria-selected="true">Input</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="database-tab" data-bs-toggle="tab" href="#database" role="tab" aria-controls="database" aria-selected="false">Database</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="input" role="tabpanel" aria-labelledby="input-tab">
+                                        <div class="row justify-content-center">
+                                            <div class="card-header">
+                                                <h6 class="card-title text-center">Masukkan Data SPM</h6>
+                                                <p class="text-center"><span style="color: red;"><strong>*</strong></span> Wajib diisi</p>
+                                            </div>
+                                            <div class="card-content col-md-6">
+                                                <div class="card-body">
+                                                    <form class="form form-vertical" name="new-spm">
+                                                        <div class="form-body">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="nomerRegister" class="d-none"><h6><i class="bi bi-pencil-square"></i> Nomer Register <i style="color: red;">terisi otomatis</i></h6></label>
+                                                                        <div class="position-relative">
+                                                                            <input type="text" class="form-control d-none" value="=ROW()-1" id="nomerRegister" name="noreg" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label for="tanggal"><h6><i class="bi bi-calendar-check"></i> Tanggal</h6></label>
+                                                                                <div class="position-relative">
+                                                                                    <input type="text" class="form-control" id="tanggal" name="tanggal" disabled>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <script>
+                                                                                var d = new Date();
+                                                                                document.getElementById("tanggal").value = d.toLocaleDateString();
+                                                                            </script>
+                                                                            
+                                                                        </div> -->
+                                                                <div class="col-12">
+                                                                    <div class="form-group has-icon-left">
+                                                                        <label for="skpd"><h6><i class="bi bi-building"></i> SKPD <i style="color: red;">*</i></h6></label>
+                                                                        <div class="position-relative">
+                                                                            <select class="form-select" id="skpd" name="skpd" required>
+                                                                                    <option selected disabled>-- Nama SKPD --</option>
+                                                                                    <option value="SEKRETARIAT DAERAH">1. SEKRETARIAT DAERAH</option> 
+                                                                                    <option value="SEKRETARIAT DPRD">2. SEKRETARIAT DPRD</option> 
+                                                                                    <option value="INSPEKTORAT DAERAH">3. INSPEKTORAT DAERAH</option> 
+                                                                                    <option value="DINAS PENDIDIKAN">4. DINAS PENDIDIKAN</option> 
+                                                                                    <option value="DINAS PEMUDA, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA">5. DINAS PEMUDA, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA</option> 
+                                                                                    <option value="DINAS KESEHATAN DAN KB">6. DINAS KESEHATAN DAN KB</option> 
+                                                                                    <option value="DINAS SOSIAL PPPA">7. DINAS SOSIAL PPPA</option> 
+                                                                                    <option value="DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL">8. DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL</option> 
+                                                                                    <option value="DINAS PEMBERDAYAAN MASYARAKAT DAN DESA">9. DINAS PEMBERDAYAAN MASYARAKAT DAN DESA</option> 
+                                                                                    <option value="DINAS PU DAN PENATAAN RUANG">10. DINAS PU DAN PENATAAN RUANG</option> 
+                                                                                    <option value="DINAS PERHUBUNGAN">11. DINAS PERHUBUNGAN</option> 
+                                                                                    <option value="SATUAN POLISI PAMONG PRAJA DAN PERLINDUNGAN MASYARAKAT">12. SATUAN POLISI PAMONG PRAJA DAN PERLINDUNGAN MASYARAKAT</option> 
+                                                                                    <option value="DNAS PEMADAM KEBAKARAN DAN PENYELAMATAN">13. DNAS PEMADAM KEBAKARAN DAN PENYELAMATAN</option> 
+                                                                                    <option value="DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU">14. DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU</option> 
+                                                                                    <option value="DINAS TENAGA KERJA">15. DINAS TENAGA KERJA</option> 
+                                                                                    <option value="DINAS KOPERASI, PERINDUSTRIAN DAN PERDAGANGAN">16. DINAS KOPERASI, PERINDUSTRIAN DAN PERDAGANGAN</option> 
+                                                                                    <option value="DINAS KOMUNIKASI DAN INFORMATIKA">17. DINAS KOMUNIKASI DAN INFORMATIKA</option> 
+                                                                                    <option value="DINAS PERTANIAN DAN KETAHANAN PANGAN">18. DINAS PERTANIAN DAN KETAHANAN PANGAN</option> 
+                                                                                    <option value="DINAS PERIKANAN">19. DINAS PERIKANAN</option> 
+                                                                                    <option value="DINAS LINGKUNGAN HIDUP, PERUMAHAN RAKYAT DAN PERMUKIMAN">20. DINAS LINGKUNGAN HIDUP, PERUMAHAN RAKYAT DAN PERMUKIMAN</option> 
+                                                                                    <option value="DINAS KEARSIPAN DAN PERPUSTAKAAN">21. DINAS KEARSIPAN DAN PERPUSTAKAAN</option> 
+                                                                                    <option value="BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PEMBANGUNAN DAERAH">22. BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PEMBANGUNAN DAERAH</option> 
+                                                                                    <option value="BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH">23. BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH</option> 
+                                                                                    <option value="BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA">24. BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA</option> 
+                                                                                    <option value="BADAN KESATUAN BANGSA DAN POLITIK">25. BADAN KESATUAN BANGSA DAN POLITIK</option> 
+                                                                                    <option value="BADAN PENANGGULANGAN BENCANA DAERAH DAN PENYELAMATAN">26. BADAN PENANGGULANGAN BENCANA DAERAH DAN PENYELAMATAN</option> 
+                                                                                    <option value="RSUD MOH. ZYN">27. RSUD MOH. ZYN</option> 
+                                                                                    <option value="RSD KETAPANG">28. RSD KETAPANG</option> 
+                                                                                    <option value="KECAMATAN SAMPANG">29. KECAMATAN SAMPANG</option> 
+                                                                                    <option value="KECAMATAN OMBEN">30. KECAMATAN OMBEN</option> 
+                                                                                    <option value="KECAMATAN CAMPLONG">31. KECAMATAN CAMPLONG</option> 
+                                                                                    <option value="KECAMATAN TORJUN">32. KECAMATAN TORJUN</option> 
+                                                                                    <option value="KECAMATAN PANGARENGAN">33. KECAMATAN PANGARENGAN</option> 
+                                                                                    <option value="KECAMATAN JRENGIK">34. KECAMATAN JRENGIK</option> 
+                                                                                    <option value="KECAMATAN SRESEH">35. KECAMATAN SRESEH</option> 
+                                                                                    <option value="KECAMATAN TAMBELANGAN">36. KECAMATAN TAMBELANGAN</option> 
+                                                                                    <option value="KECAMATAN KEDUNGDUNG">37. KECAMATAN KEDUNGDUNG</option> 
+                                                                                    <option value="KECAMATAN ROBATAL">38. KECAMATAN ROBATAL</option> 
+                                                                                    <option value="KECAMATAN KARANG PENANG">39. KECAMATAN KARANG PENANG</option> 
+                                                                                    <option value="KECAMATAN KETAPANG">40. KECAMATAN KETAPANG</option> 
+                                                                                    <option value="KECAMATAN BANYUATES">41. KECAMATAN BANYUATES</option> 
+                                                                                    <option value="KECAMATAN SOKOBANAH">42. KECAMATAN SOKOBANAH</option> 
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="noSPM"><h6><i class="bi bi-bar-chart-line"></i> Nomer SPM <i style="color: red;">*</i></h6></label>
+                                                                        <div class="position-relative">
+                                                                            <input type="text" class="form-control" placeholder="-- Nomer SPM --" id="noSPM" name="noSPM" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="bukti"><h6><i class="bi bi-bookmark-check"></i> Uraian Bukti <i style="color: red;">*</i></h6></label>
+                                                                        <div class="form-horizontal">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <!-- awalnya col-md-9 -->
+                                                                                    <div class="position-relative">
+                                                                                        <select class="form-select" id="bukti" name="bukti" required>
+                                                                                        <option selected disabled>-- Bukti --</option>
+                                                                                        <option value="BELANJA MODAL SEMESTER I/II">BELANJA MODAL SEMESTER I/II</option>
+                                                                                        <option value="BUKU INVENTARIS SEMESTER I/II">BUKU INVENTARIS SEMESTER I/II</option>
+                                                                                        <option value="KIB SEMESTER I/II">KIB SEMESTER I/II</option>
+                                                                                        <option value="BUKU PERSEDIAAN">BUKU PERSEDIAAN</option>
+                                                                                        <option value="KARTU STOCK">KARTU STOCK</option>
+                                                                                    </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 d-none">
+                                                                                    <div class="position-relative">
+                                                                                        <select class="form-select" id="jenis" name="jenis" required>
+                                                                                        <option selected disabled>SOFTCOPY<i style="color: red;">*</i></option>
+                                                                                        <option value="SOFTCOPY">SOFTCOPY</option>
+                                                                                        <option value="HARDCOPY">HARDCOPY</option>
+                                                                                    </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="validator"><h6><i class="bi bi-people"></i> Verifikator <i style="color: red;">*</i></h6></label>
+                                                                        <div class="position-relative">
+                                                                            <select class="form-select" id="verifikator" name="verifikator" required>
+                                                                                    <option selected disabled>-- Nama Verifikator --</option>
+                                                                                    <option value="AHMAD MUNASIK, S.Sos.">AHMAD MUNASIK, S.Sos.</option>
+                                                                                    <option value="FAJAR ROMADHON, S.T., M.Si.">FAJAR ROMADHON, S.T., M.Si.</option>
+                                                                                    <option value="JONI PURNA IRAWAN, S.E.,M.M.">JONI PURNA IRAWAN, S.E.,M.M.</option>
+                                                                                    <option value="LINDA YUNITASARI, S.E.">LINDA YUNITASARI, S.E.</option>
+                                                                                    <option value="NUR IMAMATUL CHOIR, S.A.">NUR IMAMATUL CHOIR, S.A.</option>
+                                                                                    <option value="ISMAIL">ISMAIL</option>
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-12 d-flex justify-content-end">
+
+                                                                    <!-- Button trigger for scrollbar modal -->
+                                                                    <button type="button-tampil" class="btn btn-danger me-1 mb-1 btn-tampilkan d-none" data-bs-toggle="modal" data-bs-target="#xlarge">
+                                                                        <i class="bi bi-printer "></i> Cetak Dokumen
+                                                                    </button>
+                                                                    <button type="submit" class="btn btn-primary btn-submit me-1 mb-1"><i class="bi bi-cloud-upload"></i> Submit</button>
+                                                                    <button class="btn btn-light-primary btn-loading me-1 mb-1 d-none" type="button" disabled>
+                                                                        <img src="assets/vendors/svg-loaders/audio.svg" class="me-4" style="width: 1.1rem" alt="audio">
+                                                                        <span>Loading...</span>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-info btn-reload me-1 mb-1 d-none" onClick="document.location.reload(true)">
+                                                                    <i class="bi bi-bag-plus"></i> 
+                                                                    Masukkan Data Baru
+                                                                </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Form Tabel Database -->
+                                    <div class="tab-pane fade" id="database" role="tabpanel" aria-labelledby="database-tab">
+                                        <div class="card-header">
+                                            Database of SPM
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-hover table-bordered" id="table1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">Waktu</th>
+                                                        <th class="text-center">Register</th>
+                                                        <th class="text-center">Nama SKPD</th>
+                                                        <th class="text-center">No. SPM</th>
+                                                        <th class="text-center">Bukti</th>
+                                                        <th class="text-center">Jenis</th>
+                                                        <th class="text-center">Verifikator</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="data">
+                                                    <!-- <tr>
+                                                        <td>6/20/2022 16:25:05</td>
+                                                        <td>1</td>
+                                                        <td>14. DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU DAN TENAGA KERJA</td>
+                                                        <td>00123/SPM-GU/1021.515/12/2022</td>
+                                                        <td>Belanja Modal Semster II</td>
+                                                        <td>SOFTCOPY</td>
+                                                        <td>
+                                                            <span class="badge bg-success">Active</span>
+                                                        </td>
+                                                    </tr> -->
+                                                </tbody>
+                                                <!-- Fetch API JS -->
+                                                <script>
+                                                    fetch('https://sheet.best/api/sheets/dad1c016-d621-4fd6-a587-bac6d48d6a05')
+                                                        .then((response) => response.json())
+                                                        .then((data) => {
+                                                            console.log(data);
+                                                            if (data.length > 0) {
+                                                                var temp = "";
+                                                                data.forEach((u) => {
+                                                                    temp += "<tr>"
+                                                                    temp += "<td class='text-center'>" + u.timestamp + "</td>"
+                                                                    temp += "<td class='text-center'>" + u.noreg + "</td>"
+                                                                    temp += "<td>" + u.skpd + "</td>"
+                                                                    temp += "<td class='text-center'>" + u.noSPM + "</td>"
+                                                                    temp += "<td class='text-center'>" + u.bukti + "</td>"
+                                                                    temp += "<td class='text-center'>" + u.jenis + "</td>"
+                                                                    temp += "<td class='text-center'>" + u.verifikator + "</td></tr>"
+                                                                })
+                                                                document.getElementById("data").innerHTML = temp;
+                                                            }
+                                                        });
+                                                </script>
+                                                <!-- /Fetch API JS -->
+
+                                            </table>
+                                        </div>
+                                        <!-- </div> -->
+
+                                        <!-- </section> -->
+                                        <button type="button" class="btn btn-light-secondary btn-reload me-1 mb-1" onClick="document.location.reload(true)"><i class="bi bi-arrow-clockwise"> </i>Refresh</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- </div> -->
+                        <!-- /Nav -->
+                    </div>
+                </div>
+                <!-- / FORM INPUT SPM -->
+
+
+                <!--Modal Print-->
+                <div class="modal fade text-left w-100" id="xlarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel16" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body" id="printspm">
+                                <!-- Form Print -->
+                                <div class="card-body border">
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="25" align="center"><img src="assets/images/logo/Sampang.png" width="70%"></td>
+                                            <td width="75" align="center">
+                                                <font face="Arial" color="black">
+                                                    <p align="end"> No. Reg / ASET /
+                                                        <script>
+                                                            document.write(new Date().getMonth() + 1);
+                                                        </script> /
+                                                        <script>
+                                                            document.write(new Date().getFullYear());
+                                                        </script>
+                                                    </p>
+                                                </font>
+                                                <font face="Times New Roman" color="black" size="4.3">
+                                                    <p align="center"> <strong>PEMERINTAH KABUPATEN SAMPANG </strong> </p>
+                                                </font>
+                                                <font face="Times New Roman" color="black" size="4">
+                                                    <p align="center"> <strong> BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH </strong></p>
+                                                </font>
+                                                <font face="Times New Roman" color="black">
+                                                    <p align="center"> Jl. Rajawali No. 04 Telp. (0323) 321024 Fax. (0323) 325371 </p>
+                                                </font>
+                                                <font face="Times New Roman" color="black" size="3">
+                                                    <p align="center"> SAMPANG 69213 </p>
+                                                </font>
+                                            </td>
+                                            <!-- <td width="25" align="center"><img src="Logo DN.jpg" width="100%"></td> -->
+                                        </tr>
+                                    </table>
+                                    <strong><hr></strong>
+                                    <font face="Arial" color="black">
+                                        <p align="center">
+                                            VALIDASI SPM BIDANG PENGELOLAAN ASET
+                                        </p>
+                                        <table width="98%">
+                                            <td width="24">
+                                                <p>
+                                                    OPD
+                                                    <br> NOMOR TGL SPM
+                                                </p>
+                                            </td>
+                                            <td width="74">
+                                                <p>
+                                                    : 17. DINAS PERTANIAN DAN KETAHANAN PANGAN <br> : 00084/SPM-LS/3.27.2.09.0.00.01.00/06/2022
+                                                </p>
+                                            </td>
+                                        </table>
+
+                                        <p>
+                                            Telah dilakukan validasi SPM dengan melampirkan:
+                                        </p>
+                                        <table width="98%">
+                                            <td width="24">
+                                                <p>
+                                                    Uraian Bukti
+                                                    <br> Jenis
+                                                </p>
+                                            </td>
+                                            <td width="74">
+                                                <p>
+                                                    : Buku Pesediaan <br> : Softcopy
+                                                </p>
+                                            </td>
+                                        </table>
+                                        <br>
+                                        <table width="100%">
+                                            <td width="25"></td>
+                                            <td width="25"></td>
+                                            <td width="25"></td>
+                                            <td width="10" align="end">
+                                                <p>
+                                                    <br><br><br>
+                                                    <script>
+                                                        document.write(new Date().getDate())
+                                                    </script> /
+                                                    <script>
+                                                        document.write(new Date().getMonth() + 1)
+                                                    </script> /
+                                                    <script>
+                                                        document.write(new Date().getFullYear())
+                                                    </script>
+                                                </p>
+                                            </td>
+                                            <td width="15" align="center">
+                                                <p>
+                                                    VERIFIKATOR
+                                                    <br> PETUGAS ASET BPPKAD
+                                                    <br> <br> <br> <br> ISMAIL
+                                                </p>
+                                            </td>
+                                        </table>
+                                    </font>
+                                </div>
+                                <!-- /Form Print -->
+                                <hr>
+                                <hr>
+                                <!-- Form Print -->
+                                <div class="card-body border">
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="25" align="center"><img src="assets/images/logo/Sampang.png" width="70%"></td>
+                                            <td width="75" align="center">
+                                                <font face="Arial" color="black">
+                                                    <p align="end"> No. Reg / ASET /
+                                                        <script>
+                                                            document.write(new Date().getMonth() + 1);
+                                                        </script> /
+                                                        <script>
+                                                            document.write(new Date().getFullYear());
+                                                        </script>
+
+                                                    </p>
+                                                </font>
+                                                <font face="Times New Roman" color="black" size="4.3">
+                                                    <p align="center"> <strong>PEMERINTAH KABUPATEN SAMPANG </strong> </p>
+                                                </font>
+                                                <font face="Times New Roman" color="black" size="4">
+                                                    <p align="center"> <strong> BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH </strong></p>
+                                                </font>
+                                                <font face="Times New Roman" color="black">
+                                                    <p align="center"> Jl. Rajawali No. 04 Telp. (0323) 321024 Fax. (0323) 325371 </p>
+                                                </font>
+                                                <font face="Times New Roman" color="black" size="3">
+                                                    <p align="center"> SAMPANG 69213 </p>
+                                                </font>
+                                            </td>
+                                            <!-- <td width="25" align="center"><img src="Logo DN.jpg" width="100%"></td> -->
+                                        </tr>
+                                    </table>
+                                    <strong><hr></strong>
+                                    <font face="Arial" color="black">
+                                        <p align="center">
+                                            VALIDASI SPM BIDANG PENGELOLAAN ASET
+                                        </p>
+                                        <table width="98%">
+                                            <td width="24">
+                                                <p>
+                                                    OPD
+                                                    <br> NOMOR TGL SPM
+                                                </p>
+                                            </td>
+                                            <td width="74">
+                                                <p>
+                                                    : 17. DINAS PERTANIAN DAN KETAHANAN PANGAN <br> : 00084/SPM-LS/3.27.2.09.0.00.01.00/06/2022
+                                                </p>
+                                            </td>
+                                        </table>
+
+                                        <p>
+                                            Telah dilakukan validasi SPM dengan melampirkan:
+                                        </p>
+                                        <table width="98%">
+                                            <td width="24">
+                                                <p>
+                                                    Uraian Bukti
+                                                    <br> Jenis
+                                                </p>
+                                            </td>
+                                            <td width="74">
+                                                <p>
+                                                    : Buku Pesediaan <br> : Softcopy
+                                                </p>
+                                            </td>
+                                        </table>
+                                        <br>
+                                        <table width="100%">
+                                            <td width="25"></td>
+                                            <td width="25"></td>
+                                            <td width="25"></td>
+                                            <td width="10" align="end">
+                                                <p>
+                                                    <br><br><br>
+                                                    <script>
+                                                        document.write(new Date().getDate())
+                                                    </script> /
+                                                    <script>
+                                                        document.write(new Date().getMonth() + 1)
+                                                    </script> /
+                                                    <script>
+                                                        document.write(new Date().getFullYear())
+                                                    </script>
+                                                </p>
+                                            </td>
+                                            <td width="15" align="center">
+                                                <p>
+                                                    VERIFIKATOR
+                                                    <br> PETUGAS ASET BPPKAD
+                                                    <br> <br> <br> <br> ISMAIL
+                                                </p>
+                                            </td>
+                                        </table>
+                                    </font>
+                                </div>
+                                <hr>
+                                <!-- /Form Print -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light-danger" data-bs-dismiss="modal">
+                                    <i class="bi bi-x-circle"></i>
+                                    Close
+                                </button>
+
+                                <button type="button " class="btn btn-success me-1 mb-1 " onclick="myPrint()"><i class="bi bi-printer "></i>
+                                    Print
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Modal Print -->
+
+            </section>
+            <!-- Hoverable rows end -->
+
+
+        </div>
+
+        <footer>
+
+            <!-- Note footer -->
+            <section class="section ">
+                <div class="row " id="table-responsive ">
+                    <div class="col-12 ">
+                        <div class="card ">
+                            <div class="card-header ">
+                                <h4 class="card-title ">Ada masalah dengan <i>website</i>? Hubungi <a href="https://api.whatsapp.com/send/?phone=6281913333320&text=Salam+Ismail.&app_absent=0 " target="_blank ">Admin Website</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Note footer -->
+
+
+            <div class="footer clearfix mb-0 text-muted ">
+                <div class="float-start ">
+                    <p>
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> &copy; Aset BPPKAD</p>
+                </div>
+                <div class="float-end ">
+                    <p>Made with &hearts; by <a href="https://asetbppkad.github.io/aset-baru.github.io/ ">Aset BPPKAD</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <!-- Js Data Table -->
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/extensions/sweetalert2.js"></script>
+    <script src="assets/vendors/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- /Js Data Table -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxb-Jd3fQvXnX5vffBIabR4wSxdTQM60DDCMEa1Upq03neOe26qxiPLdvV1FsgtkPqusg/exec'
+        const form = document.forms['new-spm']
+        const btnSubmit = document.querySelector('.btn-submit')
+        const btnLoading = document.querySelector('.btn-loading')
+        const myAlert = document.querySelector('.my-alert')
+        const myReload = document.querySelector('.btn-reload')
+        const myTampil = document.querySelector('.btn-tampilkan')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+                // ketika tombol submit klik
+                // tampilkan tombol loading hilangkan tombol submit dan 
+            btnLoading.classList.toggle('d-none')
+            btnSubmit.classList.toggle('d-none')
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    // ketika succes tampilkan tombol submit hilangkan tombol loading
+                    btnLoading.classList.toggle('d-none')
+                    myTampil.classList.toggle('d-none')
+                    myReload.classList.toggle('d-none')
+                        // myAlert.classList.toggle('d-none')
+                        // myReload.classList.toggle('d-none')
+                    Swal.fire({
+                        icon: "success",
+                        title: "Data berhasil diinput.",
+                        text: "Silakan cetak dokumen verifikasi SPM"
+                    })
+
+                    // reset data
+                    form.reset()
+
+                    console.log('Success!', response)
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- Reload -->
+    <script>
+        function reloadpage() {
+            location.reload()
+        }
+    </script>
+    <!-- /Reload -->
+
+    <!-- js print -->
+    <script type="text/javascript ">
+        function myPrint() {
+            var printdata = document.getElementById('printspm');
+            newwin = window.open(" ");
+            newwin.document.write(printdata.outerHTML);
+            newwin.print();
+            newwin.close();
+        }
+    </script>
+    <!-- /js print -->
+    <script>
+        var d = new Date();
+        document.getElementById("tanggal").innerHTML = d.toLocaleDateString();
+    </script>
+
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function() {
+            var options = {
+                telegram: "ismail_wasil", // Telegram bot username
+                whatsapp: "+6281913333320", // WhatsApp number
+                call_to_action: "Message Us", // Call to action
+                button_color: "#435ebe", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "telegram,whatsapp", // Order of buttons
+                pre_filled_message: "Hallo, Admin Aset.", // WhatsApp pre-filled message
+            };
+            var proto = 'https:',
+                host = "getbutton.io",
+                url = proto + '//static.' + host;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function() {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+
+</body>
+
+</html>

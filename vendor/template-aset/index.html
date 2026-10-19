@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Aset BPPKAD</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/bike.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/Trunojoyo.ico" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- Slide Bar -->
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="mercedes-benz.jpg" class="animate-charcter"><img src="assets/images/logo/Sampang.png" alt="Logo" height="200">aset</a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="dropdown-divider">
+                <nav class="navbar navbar-expand navbar-light">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="user-menu d-flex">
+                                    <div class="user-name text-end me-3">
+                                        <h6 class="mb-0 text-gray-600">Ismail Aset</h6>
+                                        <p class="mb-0 text-sm text-gray-600">Administrator</p>
+                                    </div>
+                                    <div class="user-img d-flex align-items-center">
+                                        <div class="avatar avatar-md">
+                                            <img src="assets/images/faces/Presiden_Ismail.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <h6 class="dropdown-header">Hello, Ismail!</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="component-button.html"><i class="icon-mid bi bi-person me-2"></i> My Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-bell me-2"></i> My Notification</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-gear me-2"></i> Settings</a></li>
+                                <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="auth-login.html"><i class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <hr class="dropdown-divider">
+
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title text-muted">Menu</li>
+
+                        <li class="sidebar-item active ">
+                            <a href="mercedes-benz.jpg" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="lasada.html" class='sidebar-link'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                                    <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                                </svg>
+                                <span>Lasada</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-tools"></i>
+                                <span>Layanan</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="audi.jpg">
+                                        <i class="bi bi-file-earmark-medical-fill"></i>
+                                        <span>Buku Inventaris</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="mazda.jpg">
+                                        <i class="bi bi-inboxes-fill"></i>
+                                        <span>Persediaan</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a href="bmw.jpg">
+                                        <i class="bi bi-cash-stack"></i>
+                                        <span>SPM</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="sidebar-item ">
+                            <a href="lexus.jpg" class='sidebar-link'>
+                                <i class="bi bi-megaphone-fill"></i>
+                                <span>Info</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="toyota.jpg" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Konsolidator</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-title text-muted">Kontak Kami</li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-phone-vibrate-fill"></i>
+                                <span>Contact</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="https://api.whatsapp.com/send/?phone=6281913333320&text=Salam+Ismail.&app_absent=0" target="_blank">
+                                        <i class="bi bi-whatsapp"></i>
+                                        <span>Admin Website</span>
+                                    </a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="honda.jpg">
+                                        <i class="bi bi-building"></i>
+                                        <sapn>Kantor</sapn>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <!-- /Slide Bar -->
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <!-- <h2 class="text_shadows">Selamat Datang Di Website Series <br> Pengelolaan Aset BPPKAD Kab. Sampang</h2> -->
+
+                <h2>Hallo, Pengunjung 😁
+                    <!-- Scroller Start -->
+
+                    <div class="scroller">
+                        <span>
+                        Selamat Datang<br/>
+                        Ini Adalah Website Series<br/>
+                        Bidang Pengelolaan Aset<br/>
+                        BPPKAD Kabupaten Sampang
+                        </span>
+                    </div>
+
+                    <!-- Scroller End -->
+                </h2>
+            </div>
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-9">
+
+                        <!-- Pejabat -->
+                        <div class="row">
+                            <!-- <h4>Our Master</h4> -->
+
+                            <!-- Running Text -->
+
+                            <!-- CSS Code -->
+                            <style>
+                                .GeneratedMarquee {
+                                    font-family: Geneva, sans-serif;
+                                    font-size: 1.2em;
+                                    /* font-weight: bold; */
+                                    line-height: 1.3em;
+                                    color: #4765d1;
+                                    padding: 0.3mm;
+                                    margin: 0.8mm;
+                                }
+                            </style>
+
+                            <!-- HTML Code -->
+                            <marquee class="GeneratedMarquee" direction="left" scrollamount="8" behavior="scroll">
+                                Untuk Buku Inventaris dan Persediaan bisa diakses di menu <i class="bi bi-tools"></i> <strong>Layanan</strong>.
+                            </marquee>
+
+                            <br>
+                            <!-- /Running Text -->
+
+                        </div>
+                        <!-- Column card -->
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="row text-center">
+                                                    <img src="assets/images/master/man.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <br>
+                                                <details>
+                                                    <summary>
+                                                        <h6 class="font-extrabold mb-0">Bambang Indra Basuki, S.Sos., M.Si.</h6>
+                                                    </summary>
+                                                    <p><i>NIP. 19700902 199302 1 001</i></p>
+                                                </details>
+                                                <h6 class="text-muted font-semibold">Kepala Bidang Pengelolaan Aset BPPKAD</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Column card -->
+
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="row text-center">
+                                                    <img src="assets/images/master/plan.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <br>
+                                                <details>
+                                                    <summary>
+                                                        <h6 class="font-extrabold mb-0">Fajar Romadhon, S.T., M.Si</h6>
+                                                    </summary>
+                                                    <p><i>NIP. 19780826 200801 1 010</i></p>
+                                                </details>
+                                                <h6 class="text-muted font-semibold">Kepala Subid Perencanaan dan Pengendalian</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="row text-center">
+                                                    <img src="assets/images/master/hand.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <br>
+                                                <details>
+                                                    <summary>
+                                                        <h6 class="font-extrabold mb-0">Ahmad Munasik, S.Sos</h6>
+                                                    </summary>
+                                                    <p><i>NIP. 19690424 198903 1 002</i></p>
+                                                </details>
+                                                <h6 class="text-muted font-semibold">Kepala Subid Pemanfaatan dan Pemindahtanganan</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <div class="row text-center">
+                                                    <img src="assets/images/master/note.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-md-12">
+                                                <br>
+                                                <details>
+                                                    <summary>
+                                                        <h6 class="font-extrabold mb-0">Joni Purna Irawan, S.E., M.M.</h6>
+                                                    </summary>
+                                                    <p><i>NIP. 19810807 201001 1 010</i></p>
+                                                </details>
+                                                <h6 class="text-muted font-semibold">Kepala Subid Inventarisasi dan Pelaporan</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /Pejabat -->
+
+                        <!-- Animasi -->
+
+                        <div class="row">
+                            <div class="bike">
+                                <div class="bike__cloud-1"></div>
+                                <div class="bike__cloud-2"></div>
+                                <div class="bike__cloud-3"></div>
+                                <div class="bike__bike">
+                                    <div class="bike__wheel">
+                                        <div class="bike__needle"></div>
+                                        <div class="bike__needle"></div>
+                                        <div class="bike__needle"></div>
+                                    </div>
+                                    <div class="bike__wheel">
+                                        <div class="bike__needle"></div>
+                                        <div class="bike__needle"></div>
+                                        <div class="bike__needle"></div>
+                                    </div>
+                                    <div class="bike__down-tube"></div>
+                                    <div class="bike__tubes">
+                                        <div class="bike__chain"></div>
+                                        <div class="bike__seat-stays"></div>
+                                        <div class="bike__chain-stays"></div>
+                                        <div class="bike__seat-tube"></div>
+                                        <div class="bike__star">
+                                            <div class="bike__pedal"></div>
+                                        </div>
+                                        <div class="bike__seat"></div>
+                                    </div>
+                                    <div class="bike__top-tube"></div>
+                                    <div class="bike__fo"></div>
+                                    <div class="bike__head-tube"></div>
+                                    <div class="bike__helm"></div>
+                                    <div class="bike__lock"></div>
+                                </div>
+                                <div class="bike__man">
+                                    <div class="bike__arm">
+                                        <div class="bike__forearm">
+                                            <div class="bike__hand"></div>
+                                        </div>
+                                        <div class="bike__sleeve"></div>
+                                    </div>
+                                    <div class="bike__back-leg">
+                                        <div class="bike__shin">
+                                            <div class="bike__skin"></div>
+                                            <div class="bike__ked"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bike__butt"></div>
+                                    <div class="bike__front-leg">
+                                        <div class="bike__shin">
+                                            <div class="bike__skin"></div>
+                                            <div class="bike__ked"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bike__shirt">
+                                        <div class="bike__collar"></div>
+                                    </div>
+                                    <div class="bike__arm">
+                                        <div class="bike__forearm">
+                                            <div class="bike__hand"></div>
+                                        </div>
+                                        <div class="bike__sleeve"></div>
+                                    </div>
+                                    <div class="bike__head">
+                                        <div class="bike__eye"></div>
+                                        <div class="bike__eye"></div>
+                                        <div class="bike__whisker"></div>
+                                        <div class="bike__nose"></div>
+                                        <div class="bike__month"></div>
+                                        <div class="bike__whisker"></div>
+                                        <div class="bike__cap">
+                                            <div class="bike__peak">
+                                                <div class="bike__peak-parts"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /Animasi -->
+
+
+                        <!-- Profile Visit -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chart-profile-visit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Profile Visit -->
+
+
+                        <!-- <div class="row">
+                            <div class="col-12 col-xl-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Profile Visit</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-primary" width="32" height="32" fill="blue" style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">Europe</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">862</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-europe"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-success" width="32" height="32" fill="blue" style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">America</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">375</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-america"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center">
+                                                    <svg class="bi text-danger" width="32" height="32" fill="blue" style="width:10px">
+                                                        <use
+                                                            xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                                    </svg>
+                                                    <h5 class="mb-0 ms-3">Indonesia</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <h5 class="mb-0">1025</h5>
+                                            </div>
+                                            <div class="col-12">
+                                                <div id="chart-indonesia"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Latest Comments</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-lg">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Comment</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/5.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Congratulations on your graduation!</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-3">
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-md">
+                                                                    <img src="assets/images/faces/2.jpg">
+                                                                </div>
+                                                                <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-auto">
+                                                            <p class=" mb-0">Wow amazing design! Can you make another tutorial for this design?</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <!-- <div class="card">
+                            <div class="card-body py-4 px-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar avatar-xl">
+                                        <img src="assets/images/faces/user.svg" alt="Face 2">
+                                    </div>
+                                    <div class="ms-3 name">
+                                        <h5 class="font-bold">Hallo!</h5>
+                                        <h6 class="text-muted mb-0"><i>Pengunjung</i></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Keterangan</h4>
+                            </div>
+                            <div class="card-content pb-4">
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/konsol.svg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">Konsolidator</h5>
+                                        <h6 class="text-muted mb-0">pihak penanggung jawab sebagai media informasi dan konsolidasi bagi SKPD jika terdapat kesulitan maupun media bertanya dalam pengisian BI dan Persediaan.</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/admin.svg">
+                                    </div>
+                                    <div class="name ms-4">
+                                        <h5 class="mb-1">Admin Website</h5>
+                                        <h6 class="text-muted mb-0">pihak yang bertanggung jawab jika terjadi error pada <i>website</i> ini.</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <!-- <div class="avatar avatar-lg">
+                                        <img src="assets/images/faces/9.jpg">
+                                    </div> -->
+                                    <div class="name ms-4">
+                                        <!-- <h5 class="mb-1">Ismail</h5> -->
+                                        <h6 class="mb-0"><i>Semua keterangan di atas bisa diakses pada menu.</i></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <footer>
+
+                <!-- Note footer -->
+                <section class="section">
+                    <div class="row" id="table-responsive">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Ada masalah dengan <i>website</i>? Hubungi <a href="https://api.whatsapp.com/send/?phone=6281913333320&text=Salam+Ismail.&app_absent=0" target="_blank">Admin Website</a></h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <p>
+                                            Jika ada kendala atau memiliki pertanyaan dalam <strong>pengisian BI</strong> dan <strong>Persediaan</strong>, setiap SKPD bisa menghubungi konsolidator dengan cara <strong>klik</strong> <a href="toyota.jpg"
+                                                class="btn btn-sm btn-outline-primary">Konsolidator</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Note footer -->
+
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> &copy; Aset BPPKAD</p>
+                    </div>
+                    <div class="float-end">
+                        <p>Made with &hearts; by <a href="https://asetbppkad.github.io/aset-baru.github.io/">Aset BPPKAD</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function() {
+            var options = {
+                telegram: "ismail_wasil", // Telegram bot username
+                whatsapp: "+6281913333320", // WhatsApp number
+                call_to_action: "Message Us", // Call to action
+                button_color: "#435ebe", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "telegram,whatsapp", // Order of buttons
+                pre_filled_message: "Hallo, Admin Aset.", // WhatsApp pre-filled message
+            };
+            var proto = 'https:',
+                host = "getbutton.io",
+                url = proto + '//static.' + host;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function() {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
+</body>
+
+</html>
