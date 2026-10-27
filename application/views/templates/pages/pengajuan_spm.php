@@ -1,3 +1,4 @@
+<?php $tahunIdent = (int) $tahunIdent; ?>
 <div class="page-heading">
     <div class="page-title">
         <div class="col-12 col-md-6 order-md-1 order-last">
@@ -36,7 +37,7 @@
             <?php
             $spmProses = "SELECT spm_masuk.id FROM spm_masuk JOIN data_user
                                                         ON spm_masuk.skpd=data_user.id
-                                                        WHERE spm_masuk.tgl_aju LIKE '$tahunIdent%' AND spm_masuk.id_status=?
+                                                        WHERE spm_masuk.tgl_aju >= '$tahunIdent-01-01' AND spm_masuk.tgl_aju < '".((int)$tahunIdent + 1)."-01-01' AND spm_masuk.id_status=?
                                                         ";
             $jumlahProses = $this->db->query($spmProses, array(1))->num_rows();
             $jumlahTolak = $this->db->query($spmProses, array(2))->num_rows();
@@ -51,7 +52,7 @@
             }
             $spmProses = "SELECT spm_masuk.id FROM spm_masuk JOIN data_user
                                                         ON spm_masuk.skpd=data_user.id
-                                                        WHERE data_user.id='$NameUser' AND spm_masuk.tgl_aju LIKE '$tahunIdent%'
+                                                        WHERE data_user.id='$NameUser' AND spm_masuk.tgl_aju >= '$tahunIdent-01-01' AND spm_masuk.tgl_aju < '".((int)$tahunIdent + 1)."-01-01'
                                                         AND spm_masuk.id_status=?
                                                         ";
             $jumlahProses = $this->db->query($spmProses, array(1))->num_rows();
@@ -578,7 +579,7 @@
                                             $spmQuery = "SELECT spm_masuk.id AS id_masuk_spm, spm_masuk.tgl_aju, data_user.name, spm_masuk.no_spm, spm_masuk.no_spm, spm_masuk.dokumen, spm_masuk.total_spm, spm_masuk.id_status, status_spm.kelas, status_spm.status, spm_masuk.catatan FROM status_spm JOIN spm_masuk 
                                                             ON status_spm.id = spm_masuk.id_status JOIN data_user
                                                             ON spm_masuk.skpd=data_user.id
-                                                            WHERE spm_masuk.tgl_aju LIKE '$tahunIdent%' AND spm_masuk.id_status=?
+                                                            WHERE spm_masuk.tgl_aju >= '$tahunIdent-01-01' AND spm_masuk.tgl_aju < '".((int)$tahunIdent + 1)."-01-01' AND spm_masuk.id_status=?
                                                             ORDER BY spm_masuk.reg DESC
                                                             ";
                                             ?>
@@ -592,7 +593,7 @@
                                             $spmQuery = "SELECT spm_masuk.id AS id_masuk_spm, spm_masuk.tgl_aju, data_user.name, spm_masuk.no_spm, spm_masuk.no_spm, spm_masuk.dokumen, spm_masuk.total_spm, spm_masuk.id_status, status_spm.kelas, status_spm.status, spm_masuk.catatan FROM status_spm JOIN spm_masuk 
                                                             ON status_spm.id = spm_masuk.id_status JOIN data_user
                                                             ON spm_masuk.skpd=data_user.id
-                                                            WHERE data_user.id=$IdUser AND spm_masuk.tgl_aju LIKE '$tahunIdent%' AND spm_masuk.id_status=?
+                                                            WHERE data_user.id=$IdUser AND spm_masuk.tgl_aju >= '$tahunIdent-01-01' AND spm_masuk.tgl_aju < '".((int)$tahunIdent + 1)."-01-01' AND spm_masuk.id_status=?
                                                             ORDER BY spm_masuk.id DESC
                                                             ";
                                             ?>
@@ -601,14 +602,14 @@
                                         $i = 1;
                                         $spm_proses = $this->db->query($spmQuery, array(1))->result_array();
                                         $spm_tolak = $this->db->query($spmQuery, array(2))->result_array();
-                                        $spm_verified = $this->db->query($spmQuery, array(3))->result_array();
+                                        $spm_verified = []; // tab Verified dimuat server-side (auth/spm_data_barada)
                                         ?>
                                         <div class="tab-pane fade show active" id="verif" role="tabpanel"
                                             aria-labelledby="verif-tab">
                                             <h4 class="text-center">SPM Terverifikasi <span><?= $tahunIdent ?></span>
                                             </h4>
                                             <div class="table-responsive">
-                                                <table class="table table-hover mb-0 super-small-table" id="table1">
+                                                <table class="table table-hover mb-0 super-small-table" id="tableVerifBarada" data-ssp-url="<?= base_url('auth/spm_data_barada?status=3&total=1&tahun=' . (int) $tahunIdent) ?>" data-ssp-noorder="0,<?= $user['id_role'] != 2 ? (true ? 5 : 4) : (true ? 4 : 3) ?>" data-base="<?= base_url() ?>">
                                                     <thead class="thead-ismail">
                                                         <tr>
                                                             <th class="text-center">NO</th>
@@ -624,45 +625,7 @@
                                                             <th class="text-center">STATUS</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody id="data">
-                                                        <?php foreach ($spm_verified as $mspm) : ?>
-                                                            <tr>
-                                                                <td class="text-center"><?= $i; ?></td>
-                                                                <td class="text-center"><?= $mspm['tgl_aju']; ?></td>
-                                                                <?php if ($user['id_role'] != 2) : ?>
-                                                                    <td class="text-center"><?= $mspm['name']; ?></td>
-                                                                <?php elseif ($user['id_role'] = 2) : ?>
-                                                                    <!-- nothing -->
-                                                                <?php endif ?>
-                                                                <td class="text-center"><?= $mspm['no_spm']; ?></td>
-                                                                <td class="text-center">
-                                                                    <?= $mspm['total_spm'] == NULL ? "" : number_format($mspm['total_spm'], 2, ',', '.'); ?>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <a href="<?= base_url('assets/doc/SPMDOC/') . $mspm['dokumen']; ?>"
-                                                                        class="badge bg-info" target="popup"
-                                                                        onclick="window.open('<?= base_url('assets/doc/SPMDOC/') . $mspm['dokumen']; ?>','popup','width=600,height=600'); return false;"
-                                                                        title="File yang diupload">
-                                                                        <i class="bi bi-file-earmark-text"></i>
-                                                                    </a>
-                                                                    <?php
-                                                                    $idSPM = $mspm['id_masuk_spm'];
-                                                                    ?>
-                                                                    <a href="<?= base_url('SPM/index/' . $idSPM) ?>"
-                                                                        class="badge bg-success" target="popup"
-                                                                        onclick="window.open('<?= base_url('SPM/index/' . $idSPM) ?>','popup'); return false;"
-                                                                        title="Kartu Verifikasi">
-                                                                        <i class="bi bi-printer"></i>
-                                                                    </a>
-                                                                </td>
-                                                                <td class="text-center">
-                                                                    <span
-                                                                        class="badge <?= $mspm['kelas'] ?>"><?= $mspm['status'] ?></span>
-                                                                </td>
-                                                            </tr>
-                                                            <?php $i++; ?>
-                                                        <?php endforeach; ?>
-                                                    </tbody>
+                                                    <tbody></tbody>
                                                 </table>
                                             </div>
                                         </div>
@@ -1354,6 +1317,7 @@
     var pathDoc = "<?= $echo1 ?>";
 </script>
 <script src="<?= base_url('assets/js/liveSearch.js') ?>"></script>
+<script>initSpmServerTables();</script>
 <script src="<?= base_url($iniKunciTombolKabur) ?>"></script>
 
 <script>
@@ -1380,8 +1344,7 @@
 
         // Fungsi inisialisasi Datatable
         function initializeDatatable() {
-            let table1 = document.querySelector("#table1");
-            let dataTable = new simpleDatatables.DataTable(table1);
+            initSpmServerTables();
             new DataTable('#tableprosesUser', {
                 order: [
                     [0, 'asc']

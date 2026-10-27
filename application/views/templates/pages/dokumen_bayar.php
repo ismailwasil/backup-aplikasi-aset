@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=794, user-scalable=yes">
     <link rel="icon" type="image/x-icon" href="<?= base_url('assets/'); ?>images/favicon/Trunojoyo.ico" />
     <title>
         <?= $title; ?>
@@ -38,14 +39,20 @@
             margin: 0;
         } */
 
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background: #9e9e9eff;
+            min-width: 210mm;
         }
 
         .invoice {
-            width: 100%;
+            width: 210mm;
             max-width: 210mm;
             /* Lebar A5 landscape */
             height: 148mm;

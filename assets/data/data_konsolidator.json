@@ -1,0 +1,380 @@
+[
+	{
+		"no": 1,
+		"nama_skpd": "SEKRETARIAT DAERAH",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 2,
+		"nama_skpd": "SEKRETARIAT DPRD",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 3,
+		"nama_skpd": "INSPEKTORAT DAERAH",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 4,
+		"nama_skpd": "DINAS PENDIDIKAN",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 5,
+		"nama_skpd": "DINAS PEMUDA, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 6,
+		"nama_skpd": "DINAS KESEHATAN DAN KB",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 7,
+		"nama_skpd": "DINAS SOSIAL PPPA",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 8,
+		"nama_skpd": "DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 9,
+		"nama_skpd": "DINAS PEMBERDAYAAN MASYARAKAT DAN DESA",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 10,
+		"nama_skpd": "DINAS PU DAN PENATAAN RUANG",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 11,
+		"nama_skpd": "DINAS PERHUBUNGAN",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 12,
+		"nama_skpd": "SATUAN POLISI PAMONG PRAJA DAN PERLINDUNGAN MASYARAKAT",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 13,
+		"nama_skpd": "DINAS PEMADAM KEBAKARAN DAN PENYELAMATAN",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 14,
+		"nama_skpd": "DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 15,
+		"nama_skpd": "DINAS TENAGA KERJA",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 16,
+		"nama_skpd": "DINAS KOPERASI, PERINDUSTRIAN DAN PERDAGANGAN",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 17,
+		"nama_skpd": "DINAS KOMUNIKASI DAN INFORMATIKA",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 18,
+		"nama_skpd": "DINAS PERTANIAN DAN KETAHANAN PANGAN",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 19,
+		"nama_skpd": "DINAS PERIKANAN",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 20,
+		"nama_skpd": "DINAS LINGKUNGAN HIDUP, PERUMAHAN RAKYAT DAN PERMUKIMAN",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 21,
+		"nama_skpd": "DINAS KEARSIPAN DAN PERPUSTAKAAN",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 22,
+		"nama_skpd": "BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PENGEMBANGAN DAERAH",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 23,
+		"nama_skpd": "BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 24,
+		"nama_skpd": "BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 25,
+		"nama_skpd": "BADAN KESATUAN BANGSA DAN POLITIK",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	},
+	{
+		"no": 26,
+		"nama_skpd": "BADAN PENANGGULANGAN BENCANA DAERAH",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 27,
+		"nama_skpd": "RSUD MOH. ZYN",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 28,
+		"nama_skpd": "RSUD KETAPANG",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 29,
+		"nama_skpd": "KECAMATAN SAMPANG",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 30,
+		"nama_skpd": "KECAMATAN OMBEN",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 31,
+		"nama_skpd": "KECAMATAN CAMPLONG",
+		"konsolidator": "Joni Purna Irawan, S.E.,M.M.",
+		"nip": "NIP. 19810807 201001 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0",
+		"type": "btn btn-success",
+		"pangkat_gol": "Penata Tk I (III/d)"
+	},
+	{
+		"no": 32,
+		"nama_skpd": "KECAMATAN TORJUN",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 33,
+		"nama_skpd": "KECAMATAN PANGARENGAN",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 34,
+		"nama_skpd": "KECAMATAN JRENGIK",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 35,
+		"nama_skpd": "KECAMATAN SRESEH",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 36,
+		"nama_skpd": "KECAMATAN TAMBELANGAN",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 37,
+		"nama_skpd": "KECAMATAN KEDUNGDUNG",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 38,
+		"nama_skpd": "KECAMATAN ROBATAL",
+		"konsolidator": "Nur Imamatul Choir, S.A.",
+		"nip": "NIP. 19920810 202012 2 006",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0",
+		"type": "btn btn-dark",
+		"pangkat_gol": "Penata Muda Tingkat I (III/b)"
+	},
+	{
+		"no": 39,
+		"nama_skpd": "KECAMATAN KARANG PENANG",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 40,
+		"nama_skpd": "KECAMATAN KETAPANG",
+		"konsolidator": "Nur Elis Krisnawati, S.Pd",
+		"nip": "NIP. 19880227 201402 2 004",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282254860102&text=Salam+Ibu+Elis.&app_absent=0",
+		"type": "btn btn-amara",
+		"pangkat_gol": "Penata (III/c)"
+	},
+	{
+		"no": 41,
+		"nama_skpd": "KECAMATAN BANYUATES",
+		"konsolidator": "Fajar Romadhon, S.T., M.Si",
+		"nip": "NIP. 19780826 200801 1 010",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0",
+		"type": "btn btn-info",
+		"pangkat_gol": "Pembina (IV-a)"
+	},
+	{
+		"no": 42,
+		"nama_skpd": "KECAMATAN SOKOBANAH",
+		"konsolidator": "Ryan Presi H.L., A.Md.Pnl.",
+		"nip": "NIP. 20001127 202302 1 002",
+		"link_wa": "https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0",
+		"type": "btn btn-ryan",
+		"pangkat_gol": "Pengatur (II/c)"
+	}
+]

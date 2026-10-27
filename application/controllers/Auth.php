@@ -322,78 +322,35 @@ class Auth extends CI_Controller
     {
         $id_role = $this->session->userdata('id_role');
 
-        // $pkm_sreseh = password_hash('pkmsresehhebat', PASSWORD_DEFAULT);
-        // $pkm_torjun = password_hash('pkmtorjunhebat', PASSWORD_DEFAULT);
-        // $pkm_pangarengan = password_hash('pkmpangarenganhebat', PASSWORD_DEFAULT);
-        // $pkm_kamoning = password_hash('pkmkamoninghebat', PASSWORD_DEFAULT);
-        // $pkm_banyuanyar = password_hash('pkmbanyuanyarhebat', PASSWORD_DEFAULT);
-        // $pkm_camplong = password_hash('pkmcamplonghebat', PASSWORD_DEFAULT);
-        // $pkm_tanjung = password_hash('pkmtanjunghebat', PASSWORD_DEFAULT);
-        // $pkm_omben = password_hash('pkmombenhebat', PASSWORD_DEFAULT);
-        // $pkm_jrangoan = password_hash('pkmjrangoanhebat', PASSWORD_DEFAULT);
-        // $pkm_kedungdung = password_hash('pkmkedungdunghebat', PASSWORD_DEFAULT);
-        // $pkm_banjar = password_hash('pkmbanjarhebat', PASSWORD_DEFAULT);
-        // $pkm_jrengik = password_hash('pkmjrengikhebat', PASSWORD_DEFAULT);
-        // $pkm_tambelangan = password_hash('pkmtambelanganhebat', PASSWORD_DEFAULT);
-        // $pkm_banyuates = password_hash('pkmbanyuateshebat', PASSWORD_DEFAULT);
-        // $pkm_bringkoning = password_hash('pkmbringkoninghebat', PASSWORD_DEFAULT);
-        // $pkm_robatal = password_hash('pkmrobatalhebat', PASSWORD_DEFAULT);
-        // $pkm_karang_penang = password_hash('pkmkarangpenanghebat', PASSWORD_DEFAULT);
-        // $pkm_ketapang = password_hash('pkmketapanghebat', PASSWORD_DEFAULT);
-        // $pkm_bunten_barat = password_hash('pkmbuntenbarathebat', PASSWORD_DEFAULT);
-        // $pkm_batulenger = password_hash('pkmbatulengerhebat', PASSWORD_DEFAULT);
-        // $pkm_tamberu_barat = password_hash('pkmtamberubarathebat', PASSWORD_DEFAULT);
-        // $pkm_mandangin = password_hash('pkmmandanginhebat', PASSWORD_DEFAULT);
+        $pkm_sreseh = password_hash('pkmsresehhebat', PASSWORD_DEFAULT);
+        $pkm_torjun = password_hash('pkmtorjunhebat', PASSWORD_DEFAULT);
+        $pkm_pangarengan = password_hash('pkmpangarenganhebat', PASSWORD_DEFAULT);
+        $pkm_kamoning = password_hash('pkmkamoninghebat', PASSWORD_DEFAULT);
+        $pkm_banyuanyar = password_hash('pkmbanyuanyarhebat', PASSWORD_DEFAULT);
+        $pkm_camplong = password_hash('pkmcamplonghebat', PASSWORD_DEFAULT);
+        $pkm_tanjung = password_hash('pkmtanjunghebat', PASSWORD_DEFAULT);
+        $pkm_omben = password_hash('pkmombenhebat', PASSWORD_DEFAULT);
+        $pkm_jrangoan = password_hash('pkmjrangoanhebat', PASSWORD_DEFAULT);
+        $pkm_kedungdung = password_hash('pkmkedungdunghebat', PASSWORD_DEFAULT);
+        $pkm_banjar = password_hash('pkmbanjarhebat', PASSWORD_DEFAULT);
+        $pkm_jrengik = password_hash('pkmjrengikhebat', PASSWORD_DEFAULT);
+        $pkm_tambelangan = password_hash('pkmtambelanganhebat', PASSWORD_DEFAULT);
+        $pkm_banyuates = password_hash('pkmbanyuateshebat', PASSWORD_DEFAULT);
+        $pkm_bringkoning = password_hash('pkmbringkoninghebat', PASSWORD_DEFAULT);
+        $pkm_robatal = password_hash('pkmrobatalhebat', PASSWORD_DEFAULT);
+        $pkm_karang_penang = password_hash('pkmkarangpenanghebat', PASSWORD_DEFAULT);
+        $pkm_ketapang = password_hash('pkmketapanghebat', PASSWORD_DEFAULT);
+        $pkm_bunten_barat = password_hash('pkmbuntenbarathebat', PASSWORD_DEFAULT);
+        $pkm_batulenger = password_hash('pkmbatulengerhebat', PASSWORD_DEFAULT);
+        $pkm_tamberu_barat = password_hash('pkmtamberubarathebat', PASSWORD_DEFAULT);
+        $pkm_mandangin = password_hash('pkmmandanginhebat', PASSWORD_DEFAULT);
 
         // $query_darurat = "ALTER TABLE spm_masuk ADD COLUMN total_spm DECIMAL(15,2) NULL AFTER dokumen;
         //                 ";
         // $this->db->query($query_darurat);
         //$data['aset_sewa'] = $this->db->get_where('aset_sewa', ['nm_aset' => 'Bus Pemda'])->row_array();
-        // die();
-
-        // mengambil jadwal BPU
-        $bulan = $this->input->post('bulan', true); // contoh input: 2026-06
-
-        // Validasi format YYYY-MM
-        if (!preg_match('/^\d{4}-\d{2}$/', $bulan)) {
-            show_error('Format bulan tidak valid');
-        }
-        $data['aset_sewa'] = $this->db
-            ->select("
-                ROW_NUMBER() OVER (ORDER BY tgl_awal_acara) AS NO,
-                DATE_FORMAT(tgl_awal_acara, '%d %M %Y') AS TANGGAL,
-                nama AS NAMA,
-                DATE_FORMAT(tgl_awal_acara, '%H:%i - Selesai') AS WAKTU,
-                keperluan AS ACARA
-            ", false)
-            ->from('event_acara')
-            ->like('tgl_awal_acara', $bulan, 'after')
-            ->get()
-            ->result_array();
-
-        echo "<table border='1' cellpadding='5' cellspacing='0'>";
-        echo "<tr>
-        <th>No</th>
-        <th>Tanggal</th>
-        <th>Nama</th>
-        <th>Waktu</th>
-        <th>Acara</th>
-      </tr>";
-
-        foreach ($data['aset_sewa'] as $row) {
-            echo "<tr>";
-            echo "<td>" . htmlspecialchars($row['NO']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['TANGGAL']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['NAMA']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['WAKTU']) . "</td>";
-            echo "<td>" . htmlspecialchars($row['ACARA']) . "</td>";
-            echo "</tr>";
-        }
-
-        echo "</table>";
-
-        die();
-        // mengambil jadwal BPU
+        //var_dump($data['aset_sewa']);
+        //die();
 
         $this->db->update(
             'data_user',
@@ -848,12 +805,12 @@ class Auth extends CI_Controller
     // Ajukan SPM
     public function ajukanSPM()
     {
-        $this->load->library('JamKerjaLogic_libra');
+		$this->load->library('JamKerjaLogic_libra');
         $indicator = $this->jamkerjalogic_libra->isJamKerja() ? 'buka' : 'kunci'; //ini indikator untuk validasi tidak bisa mengajukan di luar jam kerja
         if ($indicator == 'kunci') {
             die('Maaf, waktu sudah di luar jam kerja');
         }
-
+		
         $id_role = $this->session->userdata('id_role');
         $this->load->library('telegram'); //load library telegram
 
@@ -1319,6 +1276,169 @@ class Auth extends CI_Controller
         $this->load->view('templates/pages/pengajuan_spm_ajax', $data);
     }
     // tampilan sesuai tahun Pilihan versi live
+    // ===== Tabel SPM server-side (DataTables): paging/search/sort di database memakai LIMIT =====
+    private function _ssp_user($roles)
+    {
+        $username = $this->session->userdata('username');
+        $user = $username ? $this->db->get_where('data_user', ['username' => $username])->row_array() : null;
+        if (!$user || !in_array((int) $user['id_role'], $roles, true)) {
+            $this->output->set_status_header(403);
+            $this->_ssp_json(['error' => 'Tidak berwenang', 'data' => []]);
+            return null;
+        }
+        return $user;
+    }
+
+    private function _ssp_json($arr)
+    {
+        $this->output
+            ->set_content_type('application/json', 'utf-8')
+            ->set_output(json_encode($arr, JSON_PARTIAL_OUTPUT_ON_ERROR));
+    }
+
+    private function _ssp_tahun()
+    {
+        $t = (int) $this->input->get('tahun');
+        return ($t >= 2000 && $t <= 2100) ? $t : (int) date('Y');
+    }
+
+    private function _ssp_opts($keys, $status, $skpd, $defaultKey)
+    {
+        $orderIdx = (int) $this->input->get('order_col');
+        $key = (isset($keys[$orderIdx]) && $this->input->get('order_col') !== null && $this->input->get('order_col') !== '')
+            ? $keys[$orderIdx] : null;
+        $length = (int) $this->input->get('length');
+        return [
+            'tahun'             => $this->_ssp_tahun(),
+            'status'            => $status,
+            'skpd'              => $skpd,
+            'search'            => trim((string) $this->input->get('search')),
+            'start'             => max(0, (int) $this->input->get('start')),
+            'length'            => ($length < 1 || $length > 100) ? 10 : $length,
+            'order_key'         => $key,
+            'order_dir'         => $this->input->get('order_dir') === 'asc' ? 'asc' : 'desc',
+            'default_order_key' => $defaultKey,
+        ];
+    }
+
+    private function _ssp_rupiah($v)
+    {
+        return $v === null ? '' : number_format($v, 2, ',', '.');
+    }
+
+    private function _ssp_doc($r)
+    {
+        $url = html_escape(base_url('assets/doc/SPMDOC/') . $r['dokumen']);
+        return '<a title="File yang diupload" href="' . $url . '" class="badge bg-info" target="popup" '
+            . 'onclick="window.open(this.href,\'popup\',\'width=600,height=600\');return false;">'
+            . '<i class="bi bi-file-earmark-text"></i></a> ';
+    }
+
+    private function _ssp_print($r, $blank = false)
+    {
+        $url = html_escape(base_url('SPM/index/' . (int) $r['id_masuk_spm']));
+        $js  = $blank ? '' : ' onclick="window.open(this.href,\'popup\');return false;"';
+        return '<a title="Kartu Verifikasi" href="' . $url . '" class="badge bg-success" target="' . ($blank ? '_blank' : 'popup') . '"' . $js . '>'
+            . '<i class="bi bi-printer"></i></a> ';
+    }
+
+    public function spm_data_admin()
+    {
+        $user = $this->_ssp_user([1, 4]);
+        if (!$user) return;
+        $this->load->model('Data_SPM_model');
+        // urutan kolom sama dengan <th> di verifikasi_spm
+        $keys = ['tgl_verif', 'reg', 'name', 'no_spm', 'jenis', 'total_spm', null, 'verifikator'];
+        $o = $this->_ssp_opts($keys, 3, null, 'reg');
+        $res = $this->Data_SPM_model->ssp_get($o);
+
+        $data = [];
+        foreach ($res['rows'] as $r) {
+            $aksi = $this->_ssp_doc($r) . $this->_ssp_print($r, true)
+                . '<button type="button" title="Hapus SPM" class="badge btn-danger spm-hapus" data-id="' . (int) $r['id_masuk_spm'] . '">'
+                . '<i class="bi bi-trash"></i></button>';
+            $data[] = [
+                html_escape($r['tgl_verif']),
+                html_escape($r['reg']),
+                html_escape($r['name']),
+                html_escape($r['no_spm']),
+                html_escape($r['jenis']),
+                $this->_ssp_rupiah($r['total_spm']),
+                $aksi,
+                html_escape($r['verifikator']),
+            ];
+        }
+        $this->_ssp_json([
+            'draw' => (int) $this->input->get('draw'),
+            'recordsTotal' => $res['total'],
+            'recordsFiltered' => $res['filtered'],
+            'data' => $data,
+        ]);
+    }
+
+    public function spm_data_barada()
+    {
+        $user = $this->_ssp_user([1, 2, 4]);
+        if (!$user) return;
+        $this->load->model('Data_SPM_model');
+        $role2 = ((int) $user['id_role'] === 2);
+        $skpd  = null;
+        if ($role2) {
+            $skpd = ($user['status_skpd'] == 1) ? 13 : (int) $user['id']; // aturan sama dengan view lama
+        }
+        $status    = $this->input->get('status') === 'all' ? null : 3;
+        $withTotal = $this->input->get('total') === '1';
+
+        $keys = ['no', 'tgl_aju'];
+        if (!$role2) $keys[] = 'name';
+        $keys[] = 'no_spm';
+        if ($withTotal) $keys[] = 'total_spm';
+        $keys[] = null;      // kolom aksi
+        $keys[] = 'status';
+
+        $o = $this->_ssp_opts($keys, $status, $skpd, $role2 ? 'tgl_aju' : 'reg');
+        $res = $this->Data_SPM_model->ssp_get($o);
+
+        $no = $o['start'];
+        $data = [];
+        foreach ($res['rows'] as $r) {
+            $no++;
+            $st = (int) $r['id_status'];
+
+            $aksi = $this->_ssp_doc($r);
+            if ($st === 3) {
+                $aksi .= $this->_ssp_print($r);
+            } elseif ($st === 2) {
+                // catatan: aman untuk atribut; hanya <br> yang nanti dikembalikan oleh JS
+                $aksi .= '<a href="#" class="badge bg-danger spm-lihat-catatan" title="Lihat Catatan Penolakan" '
+                    . 'data-id="' . (int) $r['id_masuk_spm'] . '" data-catatan="' . html_escape($r['catatan']) . '">'
+                    . '<i class="bi bi-eye"></i></a>';
+            }
+
+            $badge = '<span class="badge ' . html_escape($r['kelas']) . '">' . html_escape($r['status']) . '</span>';
+            if ($st === 1 && $r['catatan'] != '') {
+                $badge .= ' <span class="text-danger"><small>resubmit</small></span>';
+            }
+
+            $row = [$no, html_escape($r['tgl_aju'])];
+            if (!$role2) $row[] = html_escape($r['name']);
+            $row[] = html_escape($r['no_spm']);
+            if ($withTotal) $row[] = $this->_ssp_rupiah($r['total_spm']);
+            $row[] = $aksi;
+            $row[] = $badge;
+            if ($st === 2) {
+                $row['DT_RowAttr'] = ['style' => 'background-color:#f1e4e6fa;'];
+            }
+            $data[] = $row;
+        }
+        $this->_ssp_json([
+            'draw' => (int) $this->input->get('draw'),
+            'recordsTotal' => $res['total'],
+            'recordsFiltered' => $res['filtered'],
+            'data' => $data,
+        ]);
+    }
+
     // Notif Ajax
     public function notif()
     {
@@ -1701,7 +1821,7 @@ class Auth extends CI_Controller
         }
     }
 
-    public function kode_barang_108()
+	public function kode_barang_108()
     {
         $this->load->model('Kode_barang_model');
         if (!$this->session->userdata('username')) {
@@ -1716,8 +1836,8 @@ class Auth extends CI_Controller
             $this->load->view('templates/page_header', $data);
             // $this->load->view('templates/menu/sidebar-menu');
             $this->load->view('templates/navbar', $data);
-            $this->load->view('templates/pages/sheet_cek_kode_barang_108', $data);
-            // $this->load->view('templates/page_footer');
+            $this->load->view('templates/pages/cek_kode_barang_108', $data);
+            $this->load->view('templates/page_footer');
         }
     }
 }

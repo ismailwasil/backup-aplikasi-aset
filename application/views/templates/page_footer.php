@@ -74,271 +74,97 @@
             <div class="modal-body">
                 <!-- table hover -->
                 <div class="table-responsive">
-                    <table class="table table-hover mb-0">
+                    <table class="table table-bordered table-hover">
                         <thead>
                             <tr class="table-warning">
-                                <th>NO.</th>
-                                <th>NAMA SKPD</th>
-                                <th>KONSOLIDATOR</th>
-                                <th>PANGKAT/GOL.</th>
+                                <th style="width: 10%;" class="text-center">NO.</th>
+                                <th style="width: 50%;" class="text-center">NAMA SKPD</th>
+                                <th style="width: 40%;" class="text-center">KONSOLIDATOR</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tabelKonsolidator">
                             <tr>
-                                <td class='td-ismail'>1</td>
-                                <td class='td-ismail'>SEKRETARIAT DAERAH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>2</td>
-                                <td class='td-ismail'>SEKRETARIAT DPRD</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>3</td>
-                                <td class='td-ismail'>INSPEKTORAT DAERAH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>4</td>
-                                <td class='td-ismail'>DINAS PENDIDIKAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>5</td>
-                                <td class='td-ismail'>DINAS PEMUDA, OLAH RAGA, KEBUDAYAAN DAN PARIWISATA</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>6</td>
-                                <td class='td-ismail'>DINAS KESEHATAN DAN KB</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>7</td>
-                                <td class='td-ismail'>DINAS SOSIAL PPPA</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>8</td>
-                                <td class='td-ismail'>DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>9</td>
-                                <td class='td-ismail'>DINAS PEMBERDAYAAN MASYARAKAT DAN DESA</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>10</td>
-                                <td class='td-ismail'>DINAS PU DAN PENATAAN RUANG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0' class='btn btn-info' target=”_blank”>Fajar Romadhon, S.T., M.Si<br>NIP. 19780826 200801 1 010</a></td>
-                                <td class='td-ismail'>Pembina (IV-a)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>11</td>
-                                <td class='td-ismail'>DINAS PERHUBUNGAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>12</td>
-                                <td class='td-ismail'>SATUAN POLISI PAMONG PRAJA DAN PERLINDUNGAN MASYARAKAT</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>13</td>
-                                <td class='td-ismail'>DINAS PEMADAM KEBAKARAN DAN PENYELAMATAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>14</td>
-                                <td class='td-ismail'>DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>15</td>
-                                <td class='td-ismail'>DINAS TENAGA KERJA</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>16</td>
-                                <td class='td-ismail'>DINAS KOPERASI, PERINDUSTRIAN DAN PERDAGANGAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>17</td>
-                                <td class='td-ismail'>DINAS KOMUNIKASI DAN INFORMATIKA</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>18</td>
-                                <td class='td-ismail'>DINAS PERTANIAN DAN KETAHANAN PANGAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>19</td>
-                                <td class='td-ismail'>DINAS PERIKANAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>20</td>
-                                <td class='td-ismail'>DINAS LINGKUNGAN HIDUP, PERUMAHAN RAKYAT DAN PERMUKIMAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>21</td>
-                                <td class='td-ismail'>DINAS KEARSIPAN DAN PERPUSTAKAAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>22</td>
-                                <td class='td-ismail'>BADAN PERENCANAAN PEMBANGUNAN, PENELITIAN DAN PEMBANGUNAN DAERAH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>23</td>
-                                <td class='td-ismail'>BADAN PENDAPATAN, PENGELOLAAN KEUANGAN DAN ASET DAERAH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>24</td>
-                                <td class='td-ismail'>BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>25</td>
-                                <td class='td-ismail'>BADAN KESATUAN BANGSA DAN POLITIK</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>26</td>
-                                <td class='td-ismail'>BADAN PENANGGULANGAN BENCANA DAERAH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>27</td>
-                                <td class='td-ismail'>RSUD MOH. ZYN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>28</td>
-                                <td class='td-ismail'>RSD KETAPANG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>29</td>
-                                <td class='td-ismail'>KECAMATAN SAMPANG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0' class='btn btn-info' target=”_blank”>Fajar Romadhon, S.T., M.Si<br>NIP. 19780826 200801 1 010</a></td>
-                                <td class='td-ismail'>Pembina (IV-a)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>30</td>
-                                <td class='td-ismail'>KECAMATAN OMBEN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>31</td>
-                                <td class='td-ismail'>KECAMATAN CAMPLONG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>32</td>
-                                <td class='td-ismail'>KECAMATAN TORJUN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>33</td>
-                                <td class='td-ismail'>KECAMATAN PANGARENGAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0' class='btn btn-info' target=”_blank”>Fajar Romadhon, S.T., M.Si<br>NIP. 19780826 200801 1 010</a></td>
-                                <td class='td-ismail'>Pembina (IV-a)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>34</td>
-                                <td class='td-ismail'>KECAMATAN JRENGIK</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0' class='btn btn-info' target=”_blank”>Fajar Romadhon, S.T., M.Si<br>NIP. 19780826 200801 1 010</a></td>
-                                <td class='td-ismail'>Pembina (IV-a)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>35</td>
-                                <td class='td-ismail'>KECAMATAN SRESEH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0' class='btn btn-info' target=”_blank”>Fajar Romadhon, S.T., M.Si<br>NIP. 19780826 200801 1 010</a></td>
-                                <td class='td-ismail'>Pembina (IV-a)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>36</td>
-                                <td class='td-ismail'>KECAMATAN TAMBELANGAN</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>37</td>
-                                <td class='td-ismail'>KECAMATAN KEDUNGDUNG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>38</td>
-                                <td class='td-ismail'>KECAMATAN ROBATAL</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282333555972&text=Salam+Ibu+Ima.&app_absent=0' class='btn btn-dark' target=”_blank”>Nur Imamatul Choir, S.A.<br>NIP. 19920810 202012 2 006</a></td>
-                                <td class='td-ismail'>Penata Muda Tingkat I (III/b)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>39</td>
-                                <td class='td-ismail'>KECAMATAN KARANG PENANG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282331135333&text=Salam+Pak+Joni.&app_absent=0' class='btn btn-success' target=”_blank”>Joni Purna Irawan, S.E.,M.M.<br>NIP. 19810807 201001 1 010</a></td>
-                                <td class='td-ismail'>Penata Tk I (III/d)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>40</td>
-                                <td class='td-ismail'>KECAMATAN KETAPANG</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>41</td>
-                                <td class='td-ismail'>KECAMATAN BANYUATES</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6282336679078&text=Salam+Bapak+Fajar.&app_absent=0' class='btn btn-info' target=”_blank”>Fajar Romadhon, S.T., M.Si<br>NIP. 19780826 200801 1 010</a></td>
-                                <td class='td-ismail'>Pembina (IV-a)</td>
-                            </tr>
-                            <tr>
-                                <td class='td-ismail'>42</td>
-                                <td class='td-ismail'>KECAMATAN SOKOBANAH</td>
-                                <td class='td-ismail'><a href='https://api.whatsapp.com/send/?phone=6289517147001&text=Salam+Pak+Ryan.&app_absent=0' class='btn btn-ryan' target=”_blank”>Ryan Presi H.L., A.Md.Pnl.<br>NIP. 20001127 202302 1 002</a></td>
-                                <td class='td-ismail'>Pengatur (II/c)</td>
+                                <td colspan="3" class="text-center">
+                                    Memuat data...
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const tbody = document.getElementById('tabelKonsolidator');
+
+                        fetch('<?= base_url("assets/data/data_konsolidator.json"); ?>')
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error('Gagal memuat data JSON');
+                                }
+
+                                return response.json();
+                            })
+                            .then(data => {
+                                tbody.innerHTML = '';
+
+                                data.forEach(item => {
+                                    const tr = document.createElement('tr');
+
+                                    // Kolom nomor
+                                    const tdNo = document.createElement('td');
+                                    tdNo.className = 'td-ismail text-center';
+                                    tdNo.textContent = item.no;
+                                    tr.appendChild(tdNo);
+
+                                    // Kolom nama SKPD
+                                    const tdSkpd = document.createElement('td');
+                                    tdSkpd.className = 'td-ismail';
+                                    tdSkpd.textContent = item.nama_skpd;
+                                    tr.appendChild(tdSkpd);
+
+                                    // Kolom konsolidator dan link WhatsApp
+                                    const tdKonsolidator = document.createElement('td');
+                                    tdKonsolidator.className = 'td-ismail text-center';
+
+                                    const link = document.createElement('a');
+                                    link.href = item.link_wa;
+                                    link.className = item.type;
+                                    link.target = '_blank';
+                                    link.rel = 'noopener noreferrer';
+
+                                    // Nama konsolidator dicetak tebal
+                                    const nama = document.createElement('strong');
+                                    nama.textContent = item.konsolidator;
+                                    link.appendChild(nama);
+
+                                    link.appendChild(document.createElement('br'));
+
+                                    link.appendChild(
+                                        document.createTextNode(item.pangkat_gol)
+                                    );
+
+                                    link.appendChild(document.createElement('br'));
+
+                                    link.appendChild(document.createTextNode(item.nip));
+
+                                    tdKonsolidator.appendChild(link);
+                                    tr.appendChild(tdKonsolidator);
+
+                                    tbody.appendChild(tr);
+                                });
+                            })
+                            .catch(error => {
+                                console.error(error);
+
+                                tbody.innerHTML = `
+                            <tr>
+                                <td colspan="4" class="text-center text-danger">
+                                    Gagal memuat data konsolidator.
+                                </td>
+                            </tr>
+                        `;
+                            });
+                    });
+                </script>
             </div>
             <div class="modal-footer">
 

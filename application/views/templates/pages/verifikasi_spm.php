@@ -130,7 +130,7 @@
                                             <h4 class="text-center">Data SPM Terverifikasi <span><?= $tahunIdent ?></span></h4>
                                             <div class="table-responsive">
                                                 <div>
-                                                    <table class="table table-hover mb-0 super-small-table" id="table1">
+                                                    <table class="table table-hover mb-0 super-small-table" id="tableVerif" data-ssp-url="<?= base_url('auth/spm_data_admin?tahun=' . (int) $tahunIdent) ?>" data-ssp-noorder="6" data-ssp-left="2" data-base="<?= base_url() ?>">
                                                         <thead class=" thead-ismail">
                                                             <tr>
                                                                 <th class="text-center">WAKTU</th>
@@ -143,69 +143,7 @@
                                                                 <th class="text-center">VERIFIKATOR</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody id="data">
-                                                            <?php
-                                                            $memoryBefore = memory_get_usage();
-                                                            $i = 1;
-                                                            ?>
-                                                            <?php foreach ($spm_masuk as $mspm) : ?>
-                                                                <tr>
-                                                                    <td class="text-center"><?= $mspm['tgl_verif'] ?></td>
-                                                                    <td class="text-center"><?= $mspm['reg'] ?></td>
-                                                                    <td><?= $mspm['name'] ?></td>
-                                                                    <td class="text-center"><?= $mspm['no_spm'] ?></td>
-                                                                    <td class="text-center"><?= $mspm['jenis'] ?></td>
-                                                                    <td class="text-center"><?= $mspm['total_spm'] == NULL ? "" : number_format($mspm['total_spm'], 2, ',', '.'); ?></td>
-                                                                    <td class="text-center">
-                                                                        <a title="File yang diupload" href="<?= base_url('assets/doc/') ?>DOK-SPM.pdf" class="badge bg-info" target="popup" onclick="window.open('<?= base_url('assets/doc/SPMDOC/') . $mspm['dokumen']; ?>','popup','width=600,height=600'); return false;">
-                                                                            <i class="bi bi-file-earmark-text"></i>
-                                                                        </a>
-                                                                        <?php
-                                                                        $idSPM = $mspm['id_masuk_spm'];
-                                                                        ?>
-                                                                        <a title="Kartu Verifikasi" href="<?= base_url('SPM/index/' . $idSPM) ?>" class="badge bg-success" target="_blank">
-                                                                            <i class="bi bi-printer"></i>
-                                                                        </a>
-                                                                        <a href="javascript:void(0)" title="Hapus SPM" class="badge bg-danger" onclick="myFunction<?= $idSPM ?>()"><i class="bi bi-trash"></i></a>
-                                                                        <script>
-                                                                            function myFunction<?= $idSPM ?>() {
-                                                                                let text = "Anda Yakin Menghapus SPM ini?\n";
-                                                                                if (confirm(text) == true) {
-                                                                                    window.location.href =
-                                                                                        "<?= base_url('auth/hapus_SPM/' . $idSPM); ?>";
-                                                                                } else {
-                                                                                    Swal.fire({
-                                                                                        title: "Dibatalkan!",
-                                                                                        text: "SPM batal dihapus",
-                                                                                        icon: "error",
-                                                                                        showConfirmButton: false,
-                                                                                        timer: 1500
-                                                                                    })
-                                                                                }
-                                                                            }
-                                                                        </script>
-                                                                    </td>
-                                                                    <td class="text-center"><?= $mspm['verifikator'] ?></td>
-                                                                </tr>
-                                                            <?php endforeach; ?>
-                                                            <?php
-                                                            $memoryAfter = memory_get_usage();
-                                                            $memoryUsed = $memoryAfter - $memoryBefore;
-                                                            echo "Penggunaan memori: " . formatBytes($memoryUsed); // Fungsi untuk menampilkan dalam format yang lebih mudah dibaca
-                                                            function formatBytes($bytes, $precision = 2)
-                                                            {
-                                                                $units = array('B', 'KB', 'MB', 'GB', 'TB');
-
-                                                                $bytes = max($bytes, 0);
-                                                                $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
-                                                                $pow = min($pow, count($units) - 1);
-
-                                                                $bytes /= (1 << (10 * $pow));
-
-                                                                return round($bytes, $precision) . ' ' . $units[$pow];
-                                                            }
-                                                            ?>
-                                                        </tbody>
+                                                        <tbody></tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -237,7 +175,8 @@
                                                             ->join('spm_masuk', 'status_spm.id = spm_masuk.id_status')
                                                             ->join('data_user', 'spm_masuk.skpd = data_user.id')
                                                             ->where('spm_masuk.id_status', 1)
-                                                            ->like('spm_masuk.tgl_aju', $tahunIdent, 'after')
+                                                            ->where('spm_masuk.tgl_aju >=', (int) $tahunIdent . '-01-01')
+->where('spm_masuk.tgl_aju <', ((int) $tahunIdent + 1) . '-01-01')
                                                             ->order_by('spm_masuk.tgl_aju', 'DESC')
                                                             ->get()
                                                             ->result_array();
@@ -348,7 +287,8 @@
                                                             ->join('spm_masuk', 'status_spm.id = spm_masuk.id_status')
                                                             ->join('data_user', 'spm_masuk.skpd = data_user.id')
                                                             ->where('spm_masuk.id_status', 2)
-                                                            ->like('spm_masuk.tgl_aju', $tahunIdent, 'after')
+                                                            ->where('spm_masuk.tgl_aju >=', (int) $tahunIdent . '-01-01')
+->where('spm_masuk.tgl_aju <', ((int) $tahunIdent + 1) . '-01-01')
                                                             ->order_by('spm_masuk.tgl_aju', 'DESC')
                                                             ->get()
                                                             ->result_array();
@@ -471,3 +411,4 @@
     var pathDoc = '<?= $echo1 ?>';
 </script>
 <script src="<?= base_url('assets/js/liveSearch.js') ?>"></script>
+<script>initSpmServerTables();</script>
