@@ -266,7 +266,7 @@
 
     <!-- Form ambil jadwal BPU -->
     <?php if ($user['id_role'] == 4): ?>
-        <form method="post" action="<?= base_url('auth/darurat') ?>">
+        <form method="post" action="<?= base_url('auth/ambil_jadwalBPU') ?>">
             <input type="text" name="bulan" placeholder="Format 2026-06">
             <button type="submit">Tampilkan</button>
         </form>
