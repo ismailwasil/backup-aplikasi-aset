@@ -318,6 +318,120 @@ class Auth extends CI_Controller
         $this->load->view('templates/error403');
     }
 
+	public function ambil_jadwalBPU()
+    {
+        $id_role = $this->session->userdata('id_role');
+        $jadwalBulan = $this->input->post('bulan', true);
+        $this->db->select("
+            DATE_FORMAT(tgl_awal_acara, '%d-%m-%Y') AS Tanggal,
+            nama AS Nama,
+            CONCAT(DATE_FORMAT(tgl_awal_acara, '%H:%i'), ' - Selesai') AS Waktu,
+            keperluan AS Acara
+        ", FALSE);
+
+        $this->db->from('event_acara');
+        $this->db->like('tgl_awal_acara', $jadwalBulan, 'after');
+        $this->db->order_by('tgl_awal_acara', 'ASC');
+
+        $query = $this->db->get();
+        $result = $query->result();
+
+        $no = 1;
+        foreach ($result as $row) {
+            $row->{'No.'} = $no++;
+        }
+
+
+        $bulan = array(
+            '01' => 'Januari',
+            '02' => 'Februari',
+            '03' => 'Maret',
+            '04' => 'April',
+            '05' => 'Mei',
+            '06' => 'Juni',
+            '07' => 'Juli',
+            '08' => 'Agustus',
+            '09' => 'September',
+            '10' => 'Oktober',
+            '11' => 'November',
+            '12' => 'Desember'
+        );
+
+
+        $html = '<table style="border-collapse:collapse; font-family:Arial,sans-serif;" border="1">
+                <thead>
+                    <tr style="background-color:#f2f2f2; text-align:center; border:1px solid #000;">
+                        <th style=" padding:2px 6px">No.</th>
+                        <th>Tanggal</th>
+                        <th>Nama</th>
+                        <th>Waktu</th>
+                        <th>Acara</th>
+                    </tr>
+                </thead>
+                <tbody>';
+
+        $no = 1;
+
+        foreach ($result as $row) {
+
+            // Konversi tanggal ke bahasa Indonesia
+            $tanggal = explode('-', $row->Tanggal);
+
+            if (count($tanggal) === 3 && isset($bulan[$tanggal[1]])) {
+                $tanggalIndonesia = $tanggal[0] . ' ' .
+                    $bulan[$tanggal[1]] . ' ' .
+                    $tanggal[2];
+            } else {
+                $tanggalIndonesia = $row->Tanggal;
+            }
+
+            $html .= '<tr style="text-align:center; border:1px solid #000;">';
+            $html .= '<td style=" padding:2px 6px">' . $no++ . '.</td>';
+            $html .= '<td style="padding:2px 6px">' . html_escape($tanggalIndonesia) . '</td>';
+            $html .= '<td style="text-align:left; padding:2px 6px">' . html_escape($row->Nama) . '</td>';
+            $html .= '<td style="padding:2px 6px">' . html_escape($row->Waktu) . '</td>';
+            $html .= '<td style="text-align:left; padding:2px 6px">' . html_escape($row->Acara) . '</td>';
+            $html .= '</tr>';
+        }
+
+        if (empty($result)) {
+            $html .= '<tr>
+                <td colspan="5" style="padding:10px; text-align:center; border:1px solid #000;">
+                    Tidak ada data acara.
+                </td>
+            </tr>';
+        }
+
+        $html .= '</tbody></table>';
+
+        echo $html;
+
+        die();
+
+
+        $swal = '<script>
+                    window.addEventListener("load", function() {
+                        Swal.fire({
+                            title: "Success!",
+                            text: "data berhasil di ubah",
+                            icon: "success",
+                            showConfirmButton: false,
+                            timer: 1500,
+                        })
+                    });
+                </script>';
+        $this->session->set_flashdata('message', $swal);
+        if ($id_role == 1) {
+            redirect('admin/pengajuan_spm');
+        } elseif ($id_role == 4) {
+            redirect('developer/pengajuan_spm');
+        } elseif ($id_role == 2) {
+            redirect('user/pengajuan_spm');
+        } else {
+            redirect('auth/');
+        }
+    }
+
     public function darurat()
     {
         $id_role = $this->session->userdata('id_role');
