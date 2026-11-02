@@ -513,7 +513,12 @@ class Lasada extends CI_Controller
                     if ($id_aset == 5) {
                         $buttonURL = "https://api.whatsapp.com/send/?phone=" . $number . "&text=Salam%2C%20" . rawurlencode($nama) . "%0A%0AAnda%20menyewa%20*" . rawurlencode($namaAset) . "*%0AUntuk%20tanggal%20*" . rawurlencode($tgl_awal_acara) . "*%0AUntuk%20keperluan%20*" . rawurlencode($keperluan) . "*%0A%0ATerima%20Kasih%0A%0A-Admin%20Aset-";
                     } else {
-                        $buttonURL = "https://api.whatsapp.com/send/?phone=" . $number . "&text=Salam%2C%20" . rawurlencode($nama) . "%0A%0AAnda%20menyewa%20*" . rawurlencode($namaAset) . "*%0AUntuk%20tanggal%20*" . rawurlencode($tgl_awal_acara) . "*%0AUntuk%20keperluan%20*" . rawurlencode($keperluan) . "*%0A%0ASilakan%20cek%20tagihan%20pembayaran%20Anda%20dengan%20kode%20pembayaran%20" . $kode_byr . "%0A%0ADan%20lakukan%20pembayaran%20segera.%0A%0ATerima%20Kasih%0A%0A-Admin%20Aset-";
+                         $date_notifikasi = new DateTime($tgl_awal_acara);
+
+                        $tanggal_notifikasi = $date_notifikasi->format('Y-m-d');
+                        $jam_notifikasi     = $date_notifikasi->format('H:i');
+
+                        $buttonURL = "https://api.whatsapp.com/send/?phone=" . $number . "&text=Salam%2C%20" . rawurlencode($nama) . ".%0A%0ATerima%20kasih%20telah%20melakukan%20pemesanan%20" . rawurlencode($namaAset) . "%20dengan%20rincian%3A%0A%0A%F0%9F%93%85%20*Tanggal%3A*%20" . rawurlencode($tanggal_notifikasi) . "%0A%E2%8F%B0%20*Waktu%3A*%20" . rawurlencode($jam_notifikasi) . "%20WIB%0A%F0%9F%8E%89%20*Keperluan%3A*%20" . rawurlencode($keperluan) . "%0A%0AMohon%20agar%20pembayaran%20dapat%20diselesaikan%20paling%20lambat%20*H-7%20sebelum%20tanggal%20pelaksanaan%20acara*.%0A%0AInformasi%20lebih%20lanjut%20dapat%20diakses%20melalui%3A%0A%F0%9F%8C%90%20https%3A%2F%2Fbpu-sampang.pages.dev%0A%0ATerima%20kasih%20atas%20kepercayaan%20Anda.%0A%0A*Salam,*%0A-Admin%20Aset-";
                     }
 
                     // @ agar kegagalan kirim Telegram tidak menampilkan warning yang merusak redirect
