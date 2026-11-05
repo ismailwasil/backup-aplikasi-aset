@@ -812,6 +812,22 @@ class Admin extends CI_Controller
             ->get()
             ->row_array();
 
+		if ($data['spm_masuk']) {
+            if ($data['spm_masuk']['jenis'] == "BELANJA PERSEDIAAN") {
+                $link = $data['spm_masuk']['link_stock'];
+            } elseif ($data['spm_masuk']['jenis'] == "BELANJA MODAL") {
+                $link = $data['spm_masuk']['link_bi'];
+            } else {
+                $link = null;
+            }
+        } else {
+            $link = null;
+        }
+
+        preg_match('/\/folders\/([a-zA-Z0-9_-]+)/', $link, $matches);
+
+        $data['id_link'] = $matches[1] ?? null;
+
         $this->load->view('templates/page_header', $data);
         $this->load->view('templates/menu/sidebar-menu');
         $this->load->view('templates/navbar', $data);
