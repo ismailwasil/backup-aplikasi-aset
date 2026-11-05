@@ -437,7 +437,7 @@
 		<!-- embeded google drive -->
         <div class="card" style="padding: 12px;">
             <details>
-                <summary>Google Drive <?= $spm_masuk['name'] ?></summary>
+                <summary style="color: #25396f; font-weight: bold;">Google Drive <?= $spm_masuk['name'] ?></summary>
                 <iframe
                     src="https://drive.google.com/embeddedfolderview?id=<?= $id_link ?>#list"
                     width="100%"
