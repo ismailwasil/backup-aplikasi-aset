@@ -435,17 +435,19 @@
         </div>
 
 		<!-- embeded google drive -->
-        <div class="card" style="padding: 12px;">
-            <details>
-                <summary style="color: #25396f; font-weight: bold;">Google Drive <?= $spm_masuk['name'] ?></summary>
-                <iframe
-                    src="https://drive.google.com/embeddedfolderview?id=<?= $id_link ?>#list"
-                    width="100%"
-                    height="600"
-                    style="border:0;">
-                </iframe>
-            </details>
-        </div>
+        <?php if ($id_link != 000): ?>
+            <div class="card" style="padding: 12px;">
+                <details>
+                    <summary style="color: #25396f; font-weight: bold;">Google Drive <?= $spm_masuk['name'] ?></summary>
+                    <iframe
+                        src="https://drive.google.com/embeddedfolderview?id=<?= $id_link ?>#list"
+                        width="100%"
+                        height="600"
+                        style="border:0;">
+                    </iframe>
+                </details>
+            </div>
+        <?php endif; ?>
         <!-- /embeded google drive -->
 		
     </section>
