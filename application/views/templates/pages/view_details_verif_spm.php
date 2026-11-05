@@ -433,6 +433,21 @@
                 </div>
             </div>
         </div>
+
+		<!-- embeded google drive -->
+        <div class="card" style="padding: 12px;">
+            <details>
+                <summary>Google Drive <?= $spm_masuk['name'] ?></summary>
+                <iframe
+                    src="https://drive.google.com/embeddedfolderview?id=<?= $id_link ?>#list"
+                    width="100%"
+                    height="600"
+                    style="border:0;">
+                </iframe>
+            </details>
+        </div>
+        <!-- /embeded google drive -->
+		
     </section>
 
     <!-- Modal Edit -->
