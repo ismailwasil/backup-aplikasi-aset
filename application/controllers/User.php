@@ -46,6 +46,10 @@ class User extends CI_Controller
     {
         $data['user'] = $this->db->get_where('data_user', ['username' => $this->session->userdata('username')])->row_array();
 
+		preg_match('/\/folders\/([a-zA-Z0-9_-]+)/', $data['user']['link_stock'], $matches);
+
+        $data['id_link'] = $matches[1] ?? null;
+
         $data['title'] = "Persediaan";
         $this->load->view('templates/page_header', $data);
         $this->load->view('templates/menu/sidebar-menu');
