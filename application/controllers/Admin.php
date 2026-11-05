@@ -818,10 +818,10 @@ class Admin extends CI_Controller
             } elseif ($data['spm_masuk']['jenis'] == "BELANJA MODAL") {
                 $link = $data['spm_masuk']['link_bi'];
             } else {
-                $link = null;
+                $link = 000;
             }
         } else {
-            $link = null;
+            $link = 000;
         }
 
         preg_match('/\/folders\/([a-zA-Z0-9_-]+)/', $link, $matches);
