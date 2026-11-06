@@ -293,6 +293,11 @@
                 <?php else: ?>
                     <!-- embeded google drive -->
                     <div class="card" style="padding: 12px;">
+                        <div class="row match-height">
+                            <div class="col-12 mt-3 mb-1">
+                                <h5 class="section-title">Buku Persediaan <?= $user['akronim'] ?></h5>
+                            </div>
+                        </div>
                         <iframe
                             src="https://drive.google.com/embeddedfolderview?id=<?= $id_link ?>#list"
                             width="100%"
