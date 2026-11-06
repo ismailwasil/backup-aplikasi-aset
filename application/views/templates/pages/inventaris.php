@@ -46,7 +46,7 @@
                 </div>
                 <!-- /konsolidator -->
 
-                <?php if ($user['id'] == 11 || $user['id'] == 13): ?>
+                <?php if ($user['id'] == 11 || $user['id'] == 13 || $user['id'] == 17): ?>
                     <div class="card" style="padding: 2%;">
                         <!-- Groups section start -->
                         <section id="groups">
