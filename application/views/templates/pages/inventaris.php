@@ -285,3 +285,9 @@
         </div>
     </section>
 </div>
+															<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault(); // Mencegah aksi default saat klik kanan
+    });
+</script>
+															
