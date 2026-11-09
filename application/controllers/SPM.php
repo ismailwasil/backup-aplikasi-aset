@@ -15,6 +15,18 @@ class Spm extends CI_Controller
         $data['title'] = "Print SPM - Aset BPPKAD";
         $verif = $this->load->view('templates/pages/view_spm', $data);
     }
+	
+    public function document($idSPM)
+    {
+        $querySPM = "SELECT *, spm_masuk.id AS id_masuk_spm FROM status_spm JOIN spm_masuk 
+                                                            ON status_spm.id = spm_masuk.id_status JOIN data_user ON spm_masuk.skpd=data_user.id
+                                                            WHERE spm_masuk.id='$idSPM'
+                                                            ";
+        $data['SPM'] = $this->db->query($querySPM)->row_array();
+        $data['title'] = "Print SPM - Aset BPPKAD";
+        $verif = $this->load->view('templates/pages/view_spm_document', $data);
+    }
+    
     public function printPDF($idSPM)
     {
 
